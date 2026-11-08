@@ -1,0 +1,1556 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>不良人研究所导航-角色解析_剧情时间线_国漫对比</title>
+  <meta name="description" content="不良人研究所导航提供不良人系列角色深度解析、剧情时间线与国漫对比参考，涵盖不良人各季内容梳理、人物关系图谱与观看顺序建议，适合国漫爱好者与考据党收藏。">
+  <meta name="keywords" content="不良人角色解析,剧情时间线,国漫对比,画江湖系列,人物关系图谱">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b1e14'/%3E%3Cpath d='M18 42 L32 18 L46 42 Z' fill='%23d4a24c'/%3E%3Ccircle cx='32' cy='40' r='6' fill='%23f5e6c8'/%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    :root {
+      --bg-page: #f7f3eb;
+      --bg-panel: #ffffff;
+      --bg-soft: #efe7d8;
+      --bg-dark: #2b1e14;
+      --ink-main: #2c241a;
+      --ink-secondary: #5c5244;
+      --ink-light: #8a7d6b;
+      --accent: #b5452c;
+      --accent-soft: #f2ddd6;
+      --gold: #b8863d;
+      --gold-soft: #f3e6cf;
+      --border: #e2d9c9;
+      --border-strong: #c9bca8;
+      --shadow-sm: 0 1px 3px rgba(44, 36, 26, .06);
+      --shadow-md: 0 4px 14px rgba(44, 36, 26, .08);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --font-sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      --font-serif: "Songti SC", "Noto Serif SC", "SimSun", serif;
+      --header-h: 120px;
+      --announce-h: 38px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + var(--announce-h) + 12px); }
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg-page);
+      color: var(--ink-main);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { font-family: inherit; cursor: pointer; }
+    .container {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+    /* 吸顶公告 + 页头 */
+    .sticky-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .announce-bar {
+      background: var(--bg-dark);
+      color: #f0e6d2;
+      font-size: 13px;
+      line-height: var(--announce-h);
+      height: var(--announce-h);
+      overflow: hidden;
+      white-space: nowrap;
+      border-bottom: 1px solid #3f2e1f;
+    }
+    .announce-bar .container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .announce-bar .tag {
+      background: var(--gold);
+      color: var(--bg-dark);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      letter-spacing: .06em;
+      flex-shrink: 0;
+    }
+    .announce-bar p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .announce-bar a {
+      color: #f5d9a8;
+      border-bottom: 1px dashed #b8863d;
+    }
+    .site-header {
+      background: rgba(255, 255, 255, .96);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 10px 0;
+      min-height: 82px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .brand-mark svg { display: block; width: 44px; height: 44px; }
+    .brand-text .name {
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: .02em;
+      color: var(--bg-dark);
+      line-height: 1.2;
+    }
+    .brand-text .sub {
+      font-size: 11px;
+      color: var(--ink-light);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+    .header-nav a {
+      font-size: 14px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      color: var(--ink-secondary);
+      transition: background .2s, color .2s;
+    }
+    .header-nav a:hover,
+    .header-nav a:focus-visible {
+      background: var(--gold-soft);
+      color: var(--bg-dark);
+      outline: none;
+    }
+    .header-search {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--bg-page);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 3px 4px 3px 14px;
+      flex-shrink: 0;
+    }
+    .header-search input {
+      border: none;
+      background: transparent;
+      font-size: 13px;
+      width: 130px;
+      padding: 6px 0;
+      color: var(--ink-main);
+      outline: none;
+    }
+    .header-search input::placeholder { color: var(--ink-light); }
+    .header-search button {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      font-size: 13px;
+      padding: 6px 14px;
+      transition: background .2s;
+    }
+    .header-search button:hover { background: #9a3822; }
+    /* 首屏 */
+    .hero {
+      background: linear-gradient(135deg, #2b1e14 0%, #3f2e1f 55%, #5a4028 100%);
+      color: #f5ecdc;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(184,134,61,.22) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 40px;
+      align-items: center;
+      padding: 44px 0 48px;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-content .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      letter-spacing: .18em;
+      color: #d4a24c;
+      border: 1px solid #6b5338;
+      padding: 4px 14px;
+      border-radius: 30px;
+      margin-bottom: 18px;
+    }
+    .hero-content h1 {
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: .02em;
+      line-height: 1.25;
+      margin-bottom: 16px;
+      color: #fff8ea;
+    }
+    .hero-content .lead {
+      font-size: 15.5px;
+      color: #d8ccb8;
+      max-width: 540px;
+      margin-bottom: 26px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 22px;
+      border-radius: 30px;
+      transition: transform .15s, background .2s, box-shadow .2s;
+      border: 1px solid transparent;
+    }
+    .btn:active { transform: scale(.97); }
+    .btn-primary {
+      background: var(--gold);
+      color: #1f150c;
+      box-shadow: 0 4px 16px rgba(184,134,61,.35);
+    }
+    .btn-primary:hover { background: #caa05a; }
+    .btn-ghost {
+      background: transparent;
+      color: #f0e6d2;
+      border-color: #7a6248;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,.08); }
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-visual svg {
+      width: 100%;
+      max-width: 340px;
+      height: auto;
+      filter: drop-shadow(0 12px 28px rgba(0,0,0,.35));
+    }
+    /* 三栏主结构 */
+    .page-grid {
+      display: grid;
+      grid-template-columns: 172px minmax(0, 1fr) 248px;
+      gap: 28px;
+      padding: 34px 0 10px;
+      align-items: start;
+    }
+    /* 左栏 */
+    .left-col {
+      position: sticky;
+      top: calc(var(--header-h) + var(--announce-h) + 18px);
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+    .side-block {
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px 14px;
+      box-shadow: var(--shadow-sm);
+    }
+    .side-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      color: var(--ink-light);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      padding-left: 2px;
+    }
+    .side-nav a {
+      display: block;
+      font-size: 13.5px;
+      color: var(--ink-secondary);
+      padding: 7px 8px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 2px;
+      transition: background .15s, color .15s;
+      line-height: 1.4;
+    }
+    .side-nav a:hover,
+    .side-nav a:focus-visible {
+      background: var(--gold-soft);
+      color: var(--bg-dark);
+      outline: none;
+    }
+    .side-nav a .count {
+      display: inline-block;
+      background: var(--bg-soft);
+      color: var(--ink-light);
+      font-size: 11px;
+      padding: 1px 7px;
+      border-radius: 10px;
+      margin-left: 4px;
+    }
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag-cloud a {
+      font-size: 12px;
+      background: var(--bg-soft);
+      color: var(--ink-secondary);
+      padding: 4px 10px;
+      border-radius: 20px;
+      transition: background .15s, color .15s;
+    }
+    .tag-cloud a:hover,
+    .tag-cloud a:focus-visible {
+      background: var(--accent-soft);
+      color: var(--accent);
+      outline: none;
+    }
+    /* 中栏 */
+    .main-col { min-width: 0; display: flex; flex-direction: column; gap: 30px; }
+    .section-card {
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 26px 28px;
+      box-shadow: var(--shadow-sm);
+    }
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .section-head h2 {
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--bg-dark);
+      letter-spacing: .01em;
+      line-height: 1.35;
+      position: relative;
+      padding-left: 14px;
+    }
+    .section-head h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      bottom: 6px;
+      width: 4px;
+      border-radius: 4px;
+      background: linear-gradient(180deg, var(--gold), var(--accent));
+    }
+    .section-head .sub-note {
+      font-size: 12.5px;
+      color: var(--ink-light);
+    }
+    .intro-text p {
+      font-size: 14.5px;
+      color: var(--ink-secondary);
+      margin-bottom: 12px;
+      line-height: 1.8;
+    }
+    .intro-text p:last-child { margin-bottom: 0; }
+    .intro-text strong { color: var(--bg-dark); font-weight: 700; }
+    /* 热门卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .content-card {
+      background: var(--bg-page);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px 16px 14px;
+      transition: border-color .2s, box-shadow .2s;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .content-card:hover {
+      border-color: var(--gold);
+      box-shadow: var(--shadow-md);
+    }
+    .content-card h3 {
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--bg-dark);
+      line-height: 1.4;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .tag {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 20px;
+      background: var(--gold-soft);
+      color: #7a5a2a;
+      white-space: nowrap;
+    }
+    .tag.hot { background: var(--accent-soft); color: var(--accent); }
+    .card-desc {
+      font-size: 13px;
+      color: var(--ink-secondary);
+      line-height: 1.65;
+    }
+    .card-meta {
+      display: flex;
+      gap: 14px;
+      font-size: 11.5px;
+      color: var(--ink-light);
+      margin-top: 2px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--border);
+    }
+    .card-meta span { display: inline-flex; align-items: center; gap: 3px; }
+    /* 紧凑列表 */
+    .compact-list { display: flex; flex-direction: column; gap: 2px; }
+    .compact-list li {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      padding: 10px 6px;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+      transition: background .15s;
+      border-radius: 4px;
+    }
+    .compact-list li:last-child { border-bottom: none; }
+    .compact-list li:hover { background: var(--bg-page); }
+    .compact-list .item-name {
+      font-weight: 600;
+      color: var(--bg-dark);
+      flex-shrink: 0;
+      min-width: 130px;
+    }
+    .compact-list .item-summary {
+      color: var(--ink-secondary);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .compact-list .item-date {
+      margin-left: auto;
+      font-size: 11.5px;
+      color: var(--ink-light);
+      flex-shrink: 0;
+    }
+    /* 分类入口 */
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .cat-item {
+      background: var(--bg-page);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px 10px;
+      text-align: center;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--ink-secondary);
+      transition: background .2s, border-color .2s, color .2s;
+    }
+    .cat-item:hover,
+    .cat-item:focus-visible {
+      background: var(--gold-soft);
+      border-color: var(--gold);
+      color: var(--bg-dark);
+      outline: none;
+    }
+    .cat-item .cat-emoji { display: block; font-size: 18px; margin-bottom: 4px; }
+    /* 深度解析 */
+    .deep-dive h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--bg-dark);
+      margin: 20px 0 8px;
+      padding-left: 10px;
+      border-left: 3px solid var(--gold);
+      line-height: 1.4;
+    }
+    .deep-dive h3:first-of-type { margin-top: 0; }
+    .deep-dive p {
+      font-size: 14.5px;
+      color: var(--ink-secondary);
+      margin-bottom: 12px;
+      line-height: 1.85;
+    }
+    .deep-dive ul {
+      margin: 8px 0 14px 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .deep-dive ul li {
+      font-size: 14px;
+      color: var(--ink-secondary);
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.7;
+    }
+    .deep-dive ul li::before {
+      content: "◆";
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 10px;
+      top: 4px;
+    }
+    /* 指南步骤 */
+    .guide-steps {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      counter-reset: step;
+    }
+    .guide-step {
+      background: var(--bg-page);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      position: relative;
+      counter-increment: step;
+    }
+    .guide-step::before {
+      content: counter(step, decimal-leading-zero);
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: .06em;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .guide-step h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--bg-dark);
+      margin-bottom: 4px;
+    }
+    .guide-step p {
+      font-size: 13px;
+      color: var(--ink-secondary);
+      line-height: 1.65;
+    }
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 8px; }
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--bg-page);
+    }
+    .faq-item summary {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--bg-dark);
+      padding: 14px 18px;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      transition: background .15s;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: "＋";
+      font-size: 18px;
+      color: var(--gold);
+      font-weight: 400;
+      transition: transform .2s;
+      flex-shrink: 0;
+    }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item summary:hover { background: var(--gold-soft); }
+    .faq-item summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+    .faq-body {
+      padding: 0 18px 16px;
+      font-size: 13.5px;
+      color: var(--ink-secondary);
+      line-height: 1.8;
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+    }
+    /* 评论 */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .comment-item {
+      background: var(--bg-page);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+    }
+    .comment-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .avatar {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--accent));
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .comment-head .nick {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--bg-dark);
+    }
+    .comment-head .badge {
+      font-size: 10px;
+      background: var(--gold-soft);
+      color: #7a5a2a;
+      padding: 1px 7px;
+      border-radius: 10px;
+      margin-left: auto;
+    }
+    .comment-text {
+      font-size: 13px;
+      color: var(--ink-secondary);
+      line-height: 1.65;
+    }
+    /* 资讯 */
+    .news-list { display: flex; flex-direction: column; gap: 0; }
+    .news-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4px 16px;
+      padding: 13px 4px;
+      border-bottom: 1px solid var(--border);
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item h4 {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--bg-dark);
+      line-height: 1.45;
+    }
+    .news-item .news-date {
+      font-size: 11.5px;
+      color: var(--ink-light);
+      white-space: nowrap;
+    }
+    .news-item .news-summary {
+      grid-column: 1 / -1;
+      font-size: 12.5px;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+    }
+    /* 相关推荐标签 */
+    .rec-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .rec-tags a {
+      font-size: 13px;
+      background: var(--bg-page);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 30px;
+      color: var(--ink-secondary);
+      transition: border-color .2s, color .2s, background .2s;
+    }
+    .rec-tags a:hover,
+    .rec-tags a:focus-visible {
+      border-color: var(--gold);
+      color: var(--bg-dark);
+      background: var(--gold-soft);
+      outline: none;
+    }
+    /* 时间线 */
+    .timeline { position: relative; padding-left: 20px; }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 4px;
+      bottom: 4px;
+      width: 2px;
+      background: var(--border-strong);
+      border-radius: 2px;
+    }
+    .timeline-item {
+      position: relative;
+      padding: 0 0 16px 14px;
+    }
+    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -18px;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gold);
+      border: 2px solid var(--bg-panel);
+      box-shadow: 0 0 0 2px var(--gold-soft);
+    }
+    .timeline-item .tl-year {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: .04em;
+    }
+    .timeline-item h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--bg-dark);
+      margin: 2px 0 3px;
+    }
+    .timeline-item p {
+      font-size: 13px;
+      color: var(--ink-secondary);
+      line-height: 1.65;
+    }
+    /* 右栏 */
+    .right-col {
+      position: sticky;
+      top: calc(var(--header-h) + var(--announce-h) + 18px);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .toc-nav a {
+      display: block;
+      font-size: 13px;
+      color: var(--ink-secondary);
+      padding: 5px 0 5px 12px;
+      border-left: 2px solid transparent;
+      transition: color .15s, border-color .15s;
+      line-height: 1.5;
+    }
+    .toc-nav a:hover,
+    .toc-nav a:focus-visible {
+      color: var(--accent);
+      border-left-color: var(--accent);
+      outline: none;
+    }
+    .hot-list li {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      padding: 7px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .hot-list li:last-child { border-bottom: none; }
+    .hot-list .rank {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--gold);
+      width: 18px;
+      flex-shrink: 0;
+      font-style: italic;
+    }
+    .hot-list a { color: var(--ink-secondary); transition: color .15s; }
+    .hot-list a:hover,
+    .hot-list a:focus-visible { color: var(--accent); outline: none; }
+    .extend-links a {
+      display: block;
+      font-size: 13px;
+      color: var(--ink-secondary);
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+      transition: color .15s, padding-left .15s;
+    }
+    .extend-links a:last-child { border-bottom: none; }
+    .extend-links a:hover,
+    .extend-links a:focus-visible {
+      color: var(--accent);
+      padding-left: 4px;
+      outline: none;
+    }
+    /* 页尾 */
+    .site-footer {
+      background: var(--bg-dark);
+      color: #c4b8a6;
+      margin-top: 40px;
+      padding: 40px 0 24px;
+      font-size: 13px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 32px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #4a3826;
+    }
+    .footer-brand .f-name {
+      font-size: 19px;
+      font-weight: 800;
+      color: #f5ecdc;
+      margin-bottom: 8px;
+    }
+    .footer-brand p {
+      font-size: 12.5px;
+      line-height: 1.7;
+      color: #a8977f;
+      max-width: 280px;
+    }
+    .footer-col h4 {
+      font-size: 13px;
+      color: #e8dcc8;
+      margin-bottom: 10px;
+      letter-spacing: .06em;
+    }
+    .footer-col a {
+      display: block;
+      font-size: 12.5px;
+      color: #a8977f;
+      padding: 3px 0;
+      transition: color .15s;
+    }
+    .footer-col a:hover { color: var(--gold); }
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      padding-top: 18px;
+      font-size: 11.5px;
+      color: #8a7d6b;
+    }
+    /* 搜索无结果 */
+    .no-result {
+      display: none;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+      background: var(--bg-page);
+      border-radius: var(--radius-md);
+      border: 1px dashed var(--border-strong);
+      margin-top: 10px;
+    }
+    .no-result.show { display: block; }
+    /* 响应式 */
+    @media (max-width: 1100px) {
+      .page-grid { grid-template-columns: 160px minmax(0, 1fr); }
+      .right-col { display: none; }
+      .container { padding: 0 18px; }
+    }
+    @media (max-width: 860px) {
+      .page-grid { grid-template-columns: minmax(0, 1fr); }
+      .left-col {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .left-col .side-block { flex: 1 1 200px; }
+      .hero-inner { grid-template-columns: 1fr; gap: 24px; }
+      .hero-visual { display: none; }
+      .hero-content h1 { font-size: 30px; }
+      .header-inner { flex-wrap: wrap; gap: 10px; }
+      .header-nav { order: 3; width: 100%; overflow-x: auto; padding-bottom: 4px; }
+      .header-search { flex: 1; }
+      .header-search input { width: 100%; }
+      .cat-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 560px) {
+      .container { padding: 0 14px; }
+      .section-card { padding: 20px 16px; }
+      .card-grid { grid-template-columns: 1fr; }
+      .comment-grid { grid-template-columns: 1fr; }
+      .guide-steps { grid-template-columns: 1fr; }
+      .hero-content h1 { font-size: 26px; }
+      .brand-text .name { font-size: 17px; }
+      .header-nav a { font-size: 12.5px; padding: 5px 9px; }
+      .compact-list li { flex-wrap: wrap; gap: 2px 10px; }
+      .compact-list .item-name { min-width: 0; }
+      .footer-grid { grid-template-columns: 1fr; gap: 20px; }
+      .cat-grid { grid-template-columns: 1fr 1fr; }
+      .section-head h2 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 吸顶区域：公告条 + 页头 -->
+<div class="sticky-wrap">
+  <div class="announce-bar">
+    <div class="container">
+      <span class="tag">上新</span>
+      <p>不良人第七季角色关系图谱已更新 · <a href="#role-map">查看人物解析</a> · 国漫对比专题新增《画江湖》系列横向评测</p>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/#top" aria-label="不良人研究所导航 首页">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" rx="14" fill="#2b1e14"/>
+            <path d="M16 44 L32 16 L48 44 Z" fill="none" stroke="#d4a24c" stroke-width="3" stroke-linejoin="round"/>
+            <circle cx="32" cy="41" r="7" fill="#d4a24c"/>
+            <circle cx="32" cy="41" r="3" fill="#2b1e14"/>
+            <path d="M12 52 L52 52" stroke="#5a4028" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="name">不良人研究所导航</span>
+          <span class="sub">Buliangren Research Index</span>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="主题导航">
+        <a href="#intro">内容简介</a>
+        <a href="#hot-picks">角色解析</a>
+        <a href="#latest">剧情时间线</a>
+        <a href="#categories">分类入口</a>
+        <a href="#deep-dive">深度考据</a>
+        <a href="#guide">体验指南</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+      <div class="header-search" role="search">
+        <input type="search" id="siteSearch" placeholder="搜索角色 / 剧情 / 对比…" aria-label="站内搜索">
+        <button type="button" id="searchBtn">搜索</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <span class="kicker">画江湖 · 不良人系列深度索引</span>
+      <h1>不良人研究所导航</h1>
+      <p class="lead">聚合角色解析、剧情时间线与国漫对比的参考型导航。从李星云、姬如雪到不良帅，从第一季到第七季，按人物、按季数、按事件脉络快速定位可考据内容，适合国漫爱好者与设定考据党收藏。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#hot-picks">查看角色解析 →</a>
+        <a class="btn btn-ghost" href="#deep-dive">读剧情考据</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#d4a24c"/>
+            <stop offset="1" stop-color="#b5452c"/>
+          </linearGradient>
+          <linearGradient id="hg2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f5e6c8" stop-opacity=".9"/>
+            <stop offset="1" stop-color="#f5e6c8" stop-opacity=".1"/>
+          </linearGradient>
+        </defs>
+        <circle cx="160" cy="160" r="132" fill="none" stroke="#5a4028" stroke-width="2" stroke-dasharray="4 10"/>
+        <circle cx="160" cy="160" r="100" fill="none" stroke="#6b5338" stroke-width="1.5"/>
+        <path d="M160 58 L206 128 L242 128 L206 166 L226 224 L160 190 L94 224 L114 166 L78 128 L114 128 Z" fill="url(#hg1)" opacity=".9"/>
+        <circle cx="160" cy="158" r="34" fill="#2b1e14" stroke="#d4a24c" stroke-width="3"/>
+        <path d="M146 156 Q160 136 174 156 Q160 150 146 156 Z" fill="#f5e6c8"/>
+        <circle cx="150" cy="160" r="3.5" fill="#f5e6c8"/>
+        <circle cx="170" cy="160" r="3.5" fill="#f5e6c8"/>
+        <path d="M152 172 Q160 178 168 172" stroke="#f5e6c8" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <text x="160" y="296" text-anchor="middle" font-size="13" fill="#d4a24c" letter-spacing="6" font-family="sans-serif">不良人</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏主内容区 -->
+<div class="container">
+  <div class="page-grid">
+
+    <!-- 左栏：频道导航 + 标签索引 -->
+    <aside class="left-col" aria-label="频道导航与标签索引">
+      <div class="side-block">
+        <div class="side-title">频道索引</div>
+        <nav class="side-nav" aria-label="左栏频道导航">
+          <a href="#intro">内容简介</a>
+          <a href="#hot-picks">角色解析推荐 <span class="count">8</span></a>
+          <a href="#latest">剧情时间线动态 <span class="count">10</span></a>
+          <a href="#categories">分类入口</a>
+          <a href="#deep-dive">深度考据正文</a>
+          <a href="#guide">体验指南</a>
+          <a href="#faq">常见问题</a>
+          <a href="#comments">用户评论 <span class="count">16</span></a>
+          <a href="#news">相关资讯</a>
+          <a href="#rec">相关推荐</a>
+          <a href="#timeline">版本时间线</a>
+        </nav>
+      </div>
+      <div class="side-block">
+        <div class="side-title">热门标签</div>
+        <div class="tag-cloud">
+          <a href="#hot-picks">李星云成长线</a>
+          <a href="#hot-picks">姬如雪身世</a>
+          <a href="#deep-dive">不良帅布局</a>
+          <a href="#latest">第七季走向</a>
+          <a href="#news">画江湖对比</a>
+          <a href="#faq">观看顺序</a>
+          <a href="#rec">人物关系图谱</a>
+          <a href="#guide">季数选择</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 中栏：主内容 -->
+    <main class="main-col">
+
+      <!-- 1. 内容简介 -->
+      <section class="section-card" id="intro">
+        <div class="section-head">
+          <h2>内容简介：不良人研究所导航是什么</h2>
+          <span class="sub-note">约 430 字</span>
+        </div>
+        <div class="intro-text">
+          <p><strong>不良人研究所导航</strong>是一个面向国漫《画江湖之不良人》系列爱好者的内容索引页面，围绕角色解析、剧情时间线与国漫对比三个核心方向组织信息。如果你正在寻找李星云、姬如雪、张子凡、陆林轩等主要人物的成长脉络，或者想理清不良帅袁天罡在五季布局中的关键落子，这里按人物与事件两条线索分别归档。</p>
+          <p>页面内容覆盖从第一季到第七季的剧情推进节点，重点梳理角色关系图谱、势力阵营更迭、经典战役背景，以及不同季数之间的时间衔接。对于刚入坑的观众，可以通过“观看顺序建议”与“季数选择”标签快速决定从哪一季开始；对于考据党，深度解析板块提供了不良人世界观中的组织架构、历史原型与设定对照。</p>
+          <p>国漫对比方向则横向对照《画江湖》系列其他作品以及同类武侠国漫在叙事节奏、人物塑造与美术风格上的差异，帮助读者建立更完整的评价坐标。所有内容以条目化、卡片化和问答形式呈现，方便按需跳转，不追求一次性通读。页面同时收录用户讨论片段与版本时间线，作为理解社区关注点的辅助参考。</p>
+        </div>
+      </section>
+
+      <!-- 2. 热门内容推荐 -->
+      <section class="section-card" id="hot-picks">
+        <div class="section-head">
+          <h2>角色解析与剧情看点推荐</h2>
+          <span class="sub-note">按人物与事件筛选</span>
+        </div>
+        <div class="card-grid">
+          <article class="content-card">
+            <h3>李星云成长线：从隐世少年到执棋者</h3>
+            <div class="card-tags">
+              <span class="tag hot">主角解析</span>
+              <span class="tag">成长弧光</span>
+              <span class="tag">第五季转折</span>
+            </div>
+            <p class="card-desc">梳理李星云在五季中的决策变化，重点拆解第五季主动入局前后的心态差异，以及不良帅对其布局的影响。</p>
+            <div class="card-meta">
+              <span>🔥 热度 9.6</span>
+              <span>更新于 06-12</span>
+              <span>评分 4.8</span>
+            </div>
+          </article>
+          <article class="content-card">
+            <h3>姬如雪身世与幻音坊线索全整理</h3>
+            <div class="card-tags">
+              <span class="tag hot">角色考据</span>
+              <span class="tag">幻音坊</span>
+              <span class="tag">身世谜团</span>
+            </div>
+            <p class="card-desc">按时间顺序归纳姬如雪与幻音坊的关联节点，对照不同季数中关于其身世的暗示与回收情况。</p>
+            <div class="card-meta">
+              <span>🔥 热度 9.2</span>
+              <span>更新于 06-08</span>
+              <span>评分 4.7</span>
+            </div>
+          </article>
+          <article class="content-card">
+            <h3>不良帅袁天罡五季布局复盘</h3>
+            <div class="card-tags">
+              <span class="tag">势力解析</span>
+              <span class="tag">不良人组织</span>
+              <span class="tag">关键决策</span>
+            </div>
+            <p class="card-desc">以不良帅的视角重新排列五季关键事件，整理其扶植、试探与制衡各方的具体动作，便于对照剧情。</p>
+            <div class="card-meta">
+              <span>🔥 热度 9.5</span>
+              <span>更新于 06-15</span>
+              <span>评分 4.9</span>
+            </div>
+          </article>
+          <article class="content-card">
+            <h3>张子凡与陆林轩感情线节点梳理</h3>
+            <div class="card-tags">
+              <span class="tag">情感线</span>
+              <span class="tag">通文馆</span>
+              <span class="tag">剧情时间线</span>
+            </div>
+            <p class="card-desc">按季数标注两人关系推进的关键场景，包括通文馆阶段与后续并肩作战的转折点。</p>
+            <div class="card-meta">
+              <span>🔥 热度 8.7</span>
+              <span>更新于 05-30</span>
+              <span>评分 4.6</span>
+            </div>
+          </article>
+          <article class="content-card">
+            <h3>不良人与《画江湖》系列国漫对比参考</h3>
+            <div class="card-tags">
+              <span class="tag hot">国漫对比</span>
+              <span class="tag">叙事节奏</span>
+              <span class="tag">美术风格</span>
+            </div>
+            <p class="card-desc">从世界观规模、人物密度和单季叙事完整度三个维度，对照《画江湖》系列其他作品与同类武侠国漫。</p>
+            <div class="card-meta">
+              <span>🔥 热度 9.0</span>
+              <span>更新于 06-02</span>
+              <span>评分 4.7</span>
+            </div>
+          </article>
+          <article class="content-card">
+            <h3>第七季新角色与势力格局变化</h3>
+            <div class="card-tags">
+              <span class="tag">最新季</span>
+              <span class="tag">势力更迭</span>
+              <span class="tag">角色图谱</span>
+            </div>
+            <p class="card-desc">汇总第七季已披露的新角色归属与旧势力关系变动，标注可能影响后续走向的关键设定。</p>
+            <div class="card-meta">
+              <span>🔥 热度 9.4</span>
+              <span>更新于 06-18</span>
+              <span>评分 4.8</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. 最新更新 / 剧情时间线动态 -->
+      <section class="section-card" id="latest">
+        <div class="section-head">
+          <h2>剧情时间线动态与条目更新</h2>
+          <span class="sub-note">按时间倒序</span>
+        </div>
+        <ul class="compact-list">
+          <li><span class="item-name">第七季角色关系图谱</span><span class="item-summary">新增李嗣源旧部与新势力间的从属标注，调整三处人物连线。</span><span class="item-date">06-18</span></li>
+          <li><span class="item-name">不良帅布局复盘</span><span class="item-summary">补充第三季关键决策的动机分析，对照后续季数回收情况。</span><span class="item-date">06-15</span></li>
+          <li><span class="item-name">李星云成长线</span><span class="item-summary">细化第五季入局前后决策对照表，增加同辈角色反应记录。</span><span class="item-date">06-12</span></li>
+          <li><span class="item-name">姬如雪身世整理</span><span class="item-summary">更新幻音坊相关场景索引，标注身世线索的首次出现位置。</span><span class="item-date">06-08</span></li>
+          <li><span class="item-name">国漫对比专题</span><span class="item-summary">新增与《画江湖之灵主》在叙事结构上的横向对照小节。</span><span class="item-date">06-02</span></li>
+          <li><span class="item-name">张子凡感情线</span><span class="item-summary">补入通文馆阶段两处关键对话场景的出处说明。</span><span class="item-date">05-30</span></li>
+          <li><span class="item-name">观看顺序指南</span><span class="item-summary">调整推荐顺序说明，区分主线必看与支线补充两种路径。</span><span class="item-date">05-26</span></li>
+          <li><span class="item-name">势力阵营档案</span><span class="item-summary">新增不良人组织架构层级示意，更新通文馆与幻音坊条目。</span><span class="item-date">05-22</span></li>
+          <li><span class="item-name">经典战役背景</span><span class="item-summary">整理三场关键战役的参战方与结果，标注剧情节点编号。</span><span class="item-date">05-18</span></li>
+          <li><span class="item-name">版本时间线</span><span class="item-summary">按季数补全各季首播年份与集数信息，便于对照观看。</span><span class="item-date">05-12</span></li>
+        </ul>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="section-card" id="categories">
+        <div class="section-head">
+          <h2>按内容方向分类查找</h2>
+          <span class="sub-note">点击定位对应板块</span>
+        </div>
+        <div class="cat-grid">
+          <a class="cat-item" href="#hot-picks"><span class="cat-emoji">🎭</span>角色解析</a>
+          <a class="cat-item" href="#latest"><span class="cat-emoji">📅</span>剧情时间线</a>
+          <a class="cat-item" href="#deep-dive"><span class="cat-emoji">📜</span>势力考据</a>
+          <a class="cat-item" href="#deep-dive"><span class="cat-emoji">⚖️</span>国漫对比</a>
+          <a class="cat-item" href="#guide"><span class="cat-emoji">▶️</span>观看顺序</a>
+          <a class="cat-item" href="#faq"><span class="cat-emoji">❓</span>常见问题</a>
+          <a class="cat-item" href="#rec"><span class="cat-emoji">🔗</span>关系图谱</a>
+          <a class="cat-item" href="#timeline"><span class="cat-emoji">🗓️</span>版本时间线</a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析正文 -->
+      <section class="section-card deep-dive" id="deep-dive">
+        <div class="section-head">
+          <h2>深度解析：不良人世界观中的势力与人物选择</h2>
+          <span class="sub-note">约 780 字</span>
+        </div>
+
+        <h3>不良人组织的层级与行动逻辑</h3>
+        <p>在《画江湖之不良人》的设定中，不良人并非简单的暗杀组织，而是一个以情报、渗透和长期布局为核心的结构。不良帅袁天罡作为顶层设计者，将组织成员分散到各势力内部，形成跨阵营的信息网络。理解这一层级关系，是看懂多季剧情中“某人为何突然反水”或“某条线索为何提前埋下”的关键。</p>
+        <p>从已呈现的剧情看，不良人的行动逻辑大致遵循三条原则：第一，优先保证组织核心目标不被察觉；第二，利用各方势力之间的制衡关系消耗对手；第三，在关键节点才暴露部分成员身份以推动局势。这三条原则贯穿多季，也解释了为何部分角色的立场转换显得突兀，实则是前期布局的回收。</p>
+        <ul>
+          <li><strong>情报优先：</strong>多数行动以获取信息为目的，直接冲突往往不是首选。</li>
+          <li><strong>身份分层：</strong>外围成员与核心成员掌握的信息量差异明显，剧情中常通过信息差制造悬念。</li>
+          <li><strong>长线回收：</strong>早期季数中的细节常在后期成为关键伏笔，适合按时间线回看。</li>
+        </ul>
+
+        <h3>主要人物在势力夹缝中的选择差异</h3>
+        <p>李星云与张子凡的路径差异，是理解《不良人》人物塑造的重要对照。李星云从回避身份到主动入局，其选择更多受到不良帅布局与身边人安危的双重推动；张子凡则在通文馆的家族责任与个人判断之间反复权衡。两人面对同一局势时的不同反应，构成了剧情推进的主要张力之一。</p>
+        <p>姬如雪与陆林轩的线索则更多体现在身世与情感选择上。幻音坊的背景使姬如雪的行动常带有组织任务与个人意愿的冲突；陆林轩的成长线则偏向从被保护到独立判断的转变。将这些线索按季数排列，能更清楚地看到编剧在人物弧光上的分配方式。</p>
+
+        <h3>国漫对比视角下的叙事节奏与设定密度</h3>
+        <p>把《不良人》放在《画江湖》系列乃至同期武侠国漫中比较，其突出特点是设定密度高、单季信息量大。与偏单元叙事的同类作品相比，《不良人》更依赖连续季数之间的伏笔回收，对中途入坑的观众有一定门槛。这也是“观看顺序建议”成为高频需求的原因。</p>
+        <p>在美术与动作设计层面，不同季数之间的制作规格存在变化，早期季数的画面风格与后期有明显差异。对比时不宜简单以“哪季更好看”概括，更合理的方式是按叙事完整度、人物塑造密度和制作规格三个维度分别对照。对于准备系统补番的读者，建议先确认自己对连续叙事的接受度，再决定从第一季顺序观看，还是从制作更成熟的季数切入。</p>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section class="section-card" id="guide">
+        <div class="section-head">
+          <h2>体验指南：如何高效使用本导航</h2>
+          <span class="sub-note">四步定位</span>
+        </div>
+        <div class="guide-steps">
+          <div class="guide-step">
+            <h4>按需求选入口</h4>
+            <p>想了解人物先看“角色解析推荐”，想理清事件顺序走“剧情时间线动态”，需要横向评价则进入“深度解析”的国漫对比小节。</p>
+          </div>
+          <div class="guide-step">
+            <h4>用分类与标签缩小范围</h4>
+            <p>分类入口按内容方向划分，左栏标签索引按具体角色与设定关键词组织，两者可配合使用，避免在长页面中反复滚动。</p>
+          </div>
+          <div class="guide-step">
+            <h4>收藏与追更</h4>
+            <p>页面按条目更新，关注“最新更新”板块即可看到近期增补内容。浏览器书签可直接定位到具体板块，方便下次继续阅读。</p>
+          </div>
+          <div class="guide-step">
+            <h4>移动端与搜索</h4>
+            <p>手机端侧栏会转为横向导航，正文顺序不变。顶部搜索框支持按角色名、季数或关键词筛选当前页面内容，无结果时会给出提示。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="section-card" id="faq">
+        <div class="section-head">
+          <h2>常见问题：观看顺序与角色相关</h2>
+          <span class="sub-note">点击展开</span>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>不良人系列应该从哪一季开始看？</summary>
+            <div class="faq-body">如果希望完整理解剧情伏笔，建议从第一季顺序观看。若更在意制作规格和叙事节奏，也可以从第三季或第四季切入，再回头补前两季的关键设定。本站“观看顺序指南”标签下有更细的路径说明。</div>
+          </details>
+          <details class="faq-item">
+            <summary>李星云在第五季之后的人物走向有什么变化？</summary>
+            <div class="faq-body">第五季是李星云从回避身份到主动入局的关键转折。此后他的决策更多考虑势力平衡与身边人的安全，与前期被动应对的状态形成对照。角色解析板块有按季数排列的决策对照表。</div>
+          </details>
+          <details class="faq-item">
+            <summary>不良人第七季大概多久更新一次？</summary>
+            <div class="faq-body">本页仅整理已公开的剧情信息与角色资料，不提供实时更新节奏。若关注第七季进展，可留意“最新更新”板块中标注的条目日期，或通过常规渠道查看官方发布信息。</div>
+          </details>
+          <details class="faq-item">
+            <summary>姬如雪的身世线索主要分布在哪几季？</summary>
+            <div class="faq-body">姬如雪与幻音坊的关联在第二季到第四季中逐步展开，部分关键暗示出现在第三季的中段。人物关系图谱中已按季数标注线索首次出现的位置，方便对照回看。</div>
+          </details>
+          <details class="faq-item">
+            <summary>不良人和《画江湖》其他系列相比，叙事上有什么不同？</summary>
+            <div class="faq-body">最明显的差异是设定密度和伏笔回收的连续性。《不良人》单季信息量更大，且较多依赖跨季回收；《画江湖》其他作品在单元叙事和独立成篇上相对更明显。深度解析中有三维度对照表。</div>
+          </details>
+          <details class="faq-item">
+            <summary>张子凡和陆林轩的感情线在哪几季比较集中？</summary>
+            <div class="faq-body">两人的关系推进主要集中在第二季到第四季，通文馆阶段的互动是重要铺垫。后续季数中更多以并肩作战的形式呈现。剧情时间线动态中有按季标注的关键场景索引。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="section-card" id="comments">
+        <div class="section-head">
+          <h2>用户评论与讨论摘录</h2>
+          <span class="sub-note">16 条 · 语气多样</span>
+        </div>
+        <div class="comment-grid">
+          <div class="comment-item"><div class="comment-head"><span class="avatar">星</span><span class="nick">星云踏月</span><span class="badge">考据党</span></div><p class="comment-text">按季数整理角色线索这个思路很实用，回看的时候不用一集一集翻。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">雪</span><span class="nick">雪落无声</span><span class="badge">入坑半年</span></div><p class="comment-text">姬如雪身世那条时间线帮了大忙，之前一直没理清幻音坊的出场顺序。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">凡</span><span class="nick">凡尘一叶</span><span class="badge">通文馆粉</span></div><p class="comment-text">张子凡和陆林轩的关键场景标注得挺细，希望后续能补上更多对话出处。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">帅</span><span class="nick">不良帅的棋</span><span class="badge">五季老粉</span></div><p class="comment-text">不良帅布局复盘写得克制，没有过度脑补，基本都能对回剧情。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">画</span><span class="nick">画江湖路人</span><span class="badge">中立</span></div><p class="comment-text">国漫对比部分比较客观，没有一味吹捧，三维度对照的框架挺好用。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">星</span><span class="nick">星云小跟班</span><span class="badge">第七季追更</span></div><p class="comment-text">第七季新角色那条更新很及时，势力关系图比我自己画的清楚多了。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">幻</span><span class="nick">幻音坊听雨</span><span class="badge">角色粉</span></div><p class="comment-text">女帝的条目希望再多一些，目前主要集中在大框架上，细节还能补。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">时</span><span class="nick">时间线整理者</span><span class="badge">数据控</span></div><p class="comment-text">版本时间线把各季年份和集数放在一起，补番规划方便很多。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">避</span><span class="nick">避雷针</span><span class="badge">理性派</span></div><p class="comment-text">部分角色的动机分析有点主观，不过作为讨论起点可以接受。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">星</span><span class="nick">星轨偏移</span><span class="badge">第二季入坑</span></div><p class="comment-text">观看顺序建议很实在，没有强行推荐从第一季硬啃，给了不同路径。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">通</span><span class="nick">通文馆旧人</span><span class="badge">剧情党</span></div><p class="comment-text">势力阵营档案那部分层级示意很清楚，不良人组织结构终于不乱了。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">陆</span><span class="nick">林轩小师妹</span><span class="badge">角色粉</span></div><p class="comment-text">陆林轩的成长线整理得不错，希望后面能补更多独立判断的场景。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">七</span><span class="nick">第七季观望</span><span class="badge">新观众</span></div><p class="comment-text">作为刚准备入坑的人，FAQ 里关于从哪季开始的问题回答得比较中肯。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">袁</span><span class="nick">袁天罡下棋</span><span class="badge">考据党</span></div><p class="comment-text">不良帅三条行动原则总结得挺准，对照回看确实很多情节能串起来。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">画</span><span class="nick">画风对比员</span><span class="badge">对比党</span></div><p class="comment-text">美术风格差异那段如果再具体一点就好了，现在偏概括。</p></div>
+          <div class="comment-item"><div class="comment-head"><span class="avatar">夜</span><span class="nick">夜看不良人</span><span class="badge">睡前补番</span></div><p class="comment-text">移动端体验还行，侧栏折叠后正文顺序没乱，躺床上刷也方便。</p></div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="section-card" id="news">
+        <div class="section-head">
+          <h2>相关资讯与版本动态</h2>
+          <span class="sub-note">6 条 · 示例内容</span>
+        </div>
+        <div class="news-list">
+          <div class="news-item">
+            <h4>不良人第七季角色关系图谱更新</h4>
+            <span class="news-date">2025-06-18</span>
+            <p class="news-summary">新增李嗣源旧部与新势力之间的从属标注，调整三处人物连线，并补充新角色的阵营归属说明。</p>
+          </div>
+          <div class="news-item">
+            <h4>国漫对比专题扩展《画江湖》系列横向评测</h4>
+            <span class="news-date">2025-06-10</span>
+            <p class="news-summary">从叙事节奏、人物密度与制作规格三个维度，新增与《画江湖之灵主》《画江湖之杯莫停》的对照小节。</p>
+          </div>
+          <div class="news-item">
+            <h4>不良帅布局复盘增补第三季关键决策分析</h4>
+            <span class="news-date">2025-06-05</span>
+            <p class="news-summary">补充袁天罡在第三季中段两次试探性布局的动机说明，并对照后续季数的回收情况。</p>
+          </div>
+          <div class="news-item">
+            <h4>观看顺序指南调整：区分主线与支线路径</h4>
+            <span class="news-date">2025-05-28</span>
+            <p class="news-summary">不再统一推荐从第一季硬啃，改为按观众对连续叙事的接受度提供两条补番路径，并标注可跳过的支线内容。</p>
+          </div>
+          <div class="news-item">
+            <h4>姬如雪身世线索索引补入幻音坊场景出处</h4>
+            <span class="news-date">2025-05-20</span>
+            <p class="news-summary">按季数标注身世线索首次出现的位置，并补充幻音坊相关场景在剧情时间线中的坐标。</p>
+          </div>
+          <div class="news-item">
+            <h4>经典战役背景整理完成三场关键节点标注</h4>
+            <span class="news-date">2025-05-12</span>
+            <p class="news-summary">整理三场关键战役的参战方、结果与剧情节点编号，便于在回看时快速定位对应集数区间。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="section-card" id="rec">
+        <div class="section-head">
+          <h2>相关推荐与内容方向索引</h2>
+          <span class="sub-note">按具体方向查找</span>
+        </div>
+        <div class="rec-tags">
+          <a href="#hot-picks">李星云成长线对照</a>
+          <a href="#hot-picks">姬如雪幻音坊背景</a>
+          <a href="#deep-dive">不良帅五季布局</a>
+          <a href="#deep-dive">通文馆与幻音坊关系</a>
+          <a href="#latest">第七季新角色归属</a>
+          <a href="#guide">补番顺序选择</a>
+          <a href="#deep-dive">画江湖系列横向对比</a>
+          <a href="#faq">主要人物关系图谱</a>
+          <a href="#timeline">各季首播年份一览</a>
+        </div>
+      </section>
+
+      <!-- 11. 版本时间线 -->
+      <section class="section-card" id="timeline">
+        <div class="section-head">
+          <h2>不良人系列版本时间线</h2>
+          <span class="sub-note">按季数排列</span>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="tl-year">2014</span>
+            <h4>第一季 · 初入江湖</h4>
+            <p>主要角色登场，李星云身份线索初步展开，不良人组织首次以幕后形式出现。</p>
+          </div>
+          <div class="timeline-item">
+            <span class="tl-year">2016</span>
+            <h4>第二季 · 势力交锋</h4>
+            <p>通文馆与幻音坊的冲突升级，姬如雪身世线索开始埋设，张子凡家族责任线展开。</p>
+          </div>
+          <div class="timeline-item">
+            <span class="tl-year">2018</span>
+            <h4>第三季 · 不良帅布局显形</h4>
+            <p>袁天罡的行动逻辑逐渐清晰，多方势力在关键节点发生碰撞，伏笔回收密度提升。</p>
+          </div>
+          <div class="timeline-item">
+            <span class="tl-year">2020</span>
+            <h4>第四季 · 身份与选择</h4>
+            <p>李星云在身份认同上出现明显转折，姬如雪与陆林轩的独立判断场景增多。</p>
+          </div>
+          <div class="timeline-item">
+            <span class="tl-year">2023</span>
+            <h4>第五季 · 主动入局</h4>
+            <p>李星云从回避转向主动参与局势，不良帅前期布局进入集中回收阶段。</p>
+          </div>
+          <div class="timeline-item">
+            <span class="tl-year">2025</span>
+            <h4>第七季 · 新势力浮现</h4>
+            <p>新角色与新势力关系逐步披露，旧势力格局出现变动，后续走向尚待展开。</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右栏：页内目录 + 热门条目 + 延伸阅读 -->
+    <aside class="right-col" aria-label="辅助阅读">
+      <div class="side-block">
+        <div class="side-title">页内目录</div>
+        <nav class="toc-nav" aria-label="页内目录">
+          <a href="#intro">内容简介</a>
+          <a href="#hot-picks">角色解析推荐</a>
+          <a href="#latest">剧情时间线动态</a>
+          <a href="#categories">分类入口</a>
+          <a href="#deep-dive">深度考据正文</a>
+          <a href="#guide">体验指南</a>
+          <a href="#faq">常见问题</a>
+          <a href="#comments">用户评论</a>
+          <a href="#news">相关资讯</a>
+          <a href="#rec">相关推荐</a>
+          <a href="#timeline">版本时间线</a>
+        </nav>
+      </div>
+      <div class="side-block">
+        <div class="side-title">热门条目</div>
+        <ul class="hot-list">
+          <li><span class="rank">01</span><a href="#hot-picks">李星云成长线解析</a></li>
+          <li><span class="rank">02</span><a href="#hot-picks">不良帅五季布局复盘</a></li>
+          <li><span class="rank">03</span><a href="#hot-picks">姬如雪身世整理</a></li>
+          <li><span class="rank">04</span><a href="#deep-dive">国漫对比三维度</a></li>
+          <li><span class="rank">05</span><a href="#latest">第七季势力变化</a></li>
+          <li><span class="rank">06</span><a href="#guide">观看顺序建议</a></li>
+        </ul>
+      </div>
+      <div class="side-block">
+        <div class="side-title">延伸阅读</div>
+        <div class="extend-links">
+          <a href="#deep-dive">不良人组织层级说明</a>
+          <a href="#deep-dive">通文馆与幻音坊对照</a>
+          <a href="#faq">主要人物关系图谱</a>
+          <a href="#timeline">各季首播年份一览</a>
+          <a href="#news">画江湖系列横向评测</a>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="f-name">不良人研究所导航</div>
+        <p>聚焦《画江湖之不良人》系列的角色解析、剧情时间线与国漫对比，为考据党与补番观众提供条目化索引。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容板块</h4>
+        <a href="#intro">内容简介</a>
+        <a href="#hot-picks">角色解析推荐</a>
+        <a href="#latest">剧情时间线动态</a>
+        <a href="#deep-dive">深度考据正文</a>
+      </div>
+      <div class="footer-col">
+        <h4>查询工具</h4>
+        <a href="#categories">分类入口</a>
+        <a href="#faq">常见问题</a>
+        <a href="#timeline">版本时间线</a>
+        <a href="#rec">相关推荐</a>
+      </div>
+      <div class="footer-col">
+        <h4>社区参考</h4>
+        <a href="#comments">用户评论</a>
+        <a href="#news">相关资讯</a>
+        <a href="#guide">体验指南</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 不良人研究所导航 · 内容仅供爱好者交流参考</span>
+      <span>部分内容为示例数据，仅用于展示页面结构</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    // 搜索功能：本地可见内容查找
+    var searchInput = document.getElementById('siteSearch');
+    var searchBtn = document.getElementById('searchBtn');
+    var mainCol = document.querySelector('.main-col');
+    var noResultEl = document.createElement('div');
+    noResultEl.className = 'no-result';
+    noResultEl.textContent = '没有找到匹配的内容，试试其他角色名或关键词。';
+    mainCol.parentNode.insertBefore(noResultEl, mainCol.nextSibling);
+
+    function removeHighlights() {
+      var marks = mainCol.querySelectorAll('mark.__search-hit');
+      marks.forEach(function (m) {
+        var parent = m.parentNode;
+        parent.replaceChild(document.createTextNode(m.textContent), m);
+        parent.normalize();
+      });
+    }
+
+    function doSearch() {
+      removeHighlights();
+      noResultEl.classList.remove('show');
+      var q = searchInput.value.trim();
+      if (!q) return;
+
+      var sections = mainCol.querySelectorAll('section');
+      var found = false;
+
+      sections.forEach(function (sec) {
+        var walker = document.createTreeWalker(sec, NodeFilter.SHOW_TEXT, {
+          acceptNode: function (node) {
+            if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+            if (node.parentNode.closest('script, style')) return NodeFilter.FILTER_REJECT;
+            return NodeFilter.FILTER_ACCEPT;
+          }
+        });
+        var nodes = [];
+        var n;
+        while ((n = walker.nextNode())) {
+          if (n.nodeValue.indexOf(q) !== -1) nodes.push(n);
+        }
+        nodes.forEach(function (textNode) {
+          var text = textNode.nodeValue;
+          var idx = text.indexOf(q);
+          if (idx === -1) return;
+          found = true;
+          var mark = document.createElement('mark');
+          mark.className = '__search-hit';
+          mark.style.background = '#f5d9a8';
+          mark.style.padding = '0 2px';
+          mark.style.borderRadius = '3px';
+          mark.textContent = q;
+          var after = textNode.splitText(idx);
+          after.nodeValue = after.nodeValue.slice(q.length);
+          textNode.parentNode.insertBefore(mark, after);
+        });
+      });
+
+      if (!found) {
+        noResultEl.classList.add('show');
+      } else {
+        var firstHit = mainCol.querySelector('mark.__search-hit');
+        if (firstHit) {
+          firstHit.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+    }
+
+    searchBtn.addEventListener('click', doSearch);
+    searchInput.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        doSearch();
+      }
+    });
+  })();
+</script>
+
+</body>
+  </html>
