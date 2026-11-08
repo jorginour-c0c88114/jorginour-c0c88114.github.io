@@ -1,0 +1,1582 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>柚子猫-治愈系日常_短篇动画_和猫一起生活</title>
+  <meta name="description" content="柚子猫是一个专注治愈系猫咪日常内容的主题门户，提供短篇动画、图文记录、生活片段与创作者推荐。适合喜欢温馨陪伴、想放松心情、了解猫咪故事的用户浏览。">
+  <meta name="keywords" content="治愈系猫咪,短篇动画,猫咪日常,温馨陪伴,生活片段">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f4a261'/%3E%3Ccircle cx='22' cy='26' r='5' fill='%23fff'/%3E%3Ccircle cx='42' cy='26' r='5' fill='%23fff'/%3E%3Ccircle cx='22' cy='26' r='2' fill='%23333'/%3E%3Ccircle cx='42' cy='26' r='2' fill='%23333'/%3E%3Cpath d='M26 42 Q32 48 38 42' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    :root {
+      --brand: #e76f51;
+      --brand-soft: #f4a261;
+      --brand-pale: #fff3e9;
+      --ink: #2f2a26;
+      --ink-soft: #6b625b;
+      --paper: #fdfaf7;
+      --panel: #ffffff;
+      --line: #efe6de;
+      --line-strong: #e0d3c8;
+      --radius: 14px;
+      --radius-sm: 8px;
+      --shadow-sm: 0 2px 8px rgba(60, 40, 20, 0.05);
+      --shadow-md: 0 8px 24px rgba(60, 40, 20, 0.09);
+      --font: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+      --header-h: 64px;
+      --notice-h: 40px;
+      --sticky-total: calc(var(--notice-h) + var(--header-h));
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: calc(var(--sticky-total) + 16px); }
+    body {
+      font-family: var(--font);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { font-family: inherit; cursor: pointer; }
+    img, svg { display: block; max-width: 100%; }
+
+    /* ===== 吸顶公告条 ===== */
+    .notice-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: var(--notice-h);
+      background: linear-gradient(90deg, #2f2a26, #4a3f38);
+      color: #ffe8d6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      letter-spacing: 0.2px;
+      padding: 0 16px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .notice-bar strong { color: #ffb27a; margin: 0 4px; }
+
+    /* ===== 吸顶页头 ===== */
+    .site-header {
+      position: sticky;
+      top: var(--notice-h);
+      z-index: 99;
+      height: var(--header-h);
+      background: rgba(253, 250, 247, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      gap: 28px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--brand-pale);
+      display: grid;
+      place-items: center;
+    }
+    .brand-name {
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: var(--ink);
+    }
+    .header-nav {
+      display: flex;
+      gap: 4px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      flex: 1;
+    }
+    .header-nav::-webkit-scrollbar { display: none; }
+    .header-nav a {
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      color: var(--ink-soft);
+      white-space: nowrap;
+      transition: background 0.2s, color 0.2s;
+    }
+    .header-nav a:hover { background: var(--brand-pale); color: var(--brand); }
+    .header-search {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--panel);
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      padding: 4px 6px 4px 14px;
+      flex-shrink: 0;
+    }
+    .header-search input {
+      border: 0;
+      outline: 0;
+      background: transparent;
+      font-size: 13px;
+      width: 130px;
+      color: var(--ink);
+    }
+    .header-search input::placeholder { color: #b6a99e; }
+    .header-search button {
+      border: 0;
+      background: var(--brand);
+      color: #fff;
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 12px;
+    }
+
+    /* ===== 首屏 ===== */
+    .hero {
+      background: linear-gradient(160deg, #fff3e9 0%, #fdfaf7 55%, #f7efe8 100%);
+      border-bottom: 1px solid var(--line);
+      overflow: hidden;
+    }
+    .hero-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 52px 24px 46px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--brand);
+      background: #fff;
+      border: 1px solid #f6d9c6;
+      padding: 4px 14px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+    .hero-eyebrow .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--brand);
+      animation: pulse 1.8s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 1.18;
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--brand);
+      position: relative;
+    }
+    .hero h1 em::after {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; bottom: 4px;
+      height: 12px;
+      background: rgba(244, 162, 97, 0.32);
+      border-radius: 4px;
+      z-index: -1;
+    }
+    .hero-desc {
+      font-size: 16px;
+      color: var(--ink-soft);
+      max-width: 540px;
+      margin-bottom: 26px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 999px;
+      padding: 11px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid transparent;
+      transition: transform 0.16s, box-shadow 0.16s, background 0.2s;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--brand);
+      color: #fff;
+      box-shadow: 0 6px 16px rgba(231, 111, 81, 0.26);
+    }
+    .btn-primary:hover { box-shadow: 0 8px 22px rgba(231, 111, 81, 0.34); }
+    .btn-ghost {
+      background: #fff;
+      color: var(--ink);
+      border-color: var(--line-strong);
+    }
+    .hero-stats {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .hero-stats .num {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--brand);
+      line-height: 1.2;
+    }
+    .hero-stats .lbl {
+      font-size: 12px;
+      color: var(--ink-soft);
+      letter-spacing: 0.4px;
+    }
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .hero-visual svg {
+      width: min(100%, 360px);
+      height: auto;
+      filter: drop-shadow(0 18px 30px rgba(180, 120, 70, 0.16));
+    }
+
+    /* ===== 三栏主内容 ===== */
+    .layout {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 32px 24px 56px;
+      display: grid;
+      grid-template-columns: 176px minmax(0, 1fr) 248px;
+      gap: 28px;
+      align-items: start;
+    }
+    .col-left, .col-right {
+      position: sticky;
+      top: calc(var(--sticky-total) + 18px);
+      align-self: start;
+    }
+
+    /* 侧栏通用 */
+    .side-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      margin-bottom: 18px;
+      box-shadow: var(--shadow-sm);
+    }
+    .side-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .side-title::before {
+      content: "";
+      width: 4px;
+      height: 14px;
+      border-radius: 2px;
+      background: var(--brand);
+    }
+    .channel-list li { margin-bottom: 2px; }
+    .channel-list a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 7px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      transition: background 0.18s, color 0.18s;
+    }
+    .channel-list a:hover { background: var(--brand-pale); color: var(--brand); }
+    .channel-list .count {
+      font-size: 11px;
+      color: #b6a99e;
+    }
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+    .tag-cloud a {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--brand-pale);
+      color: #a25a3c;
+      transition: background 0.18s, color 0.18s;
+    }
+    .tag-cloud a:hover { background: var(--brand); color: #fff; }
+    .toc-list li { margin-bottom: 4px; }
+    .toc-list a {
+      display: block;
+      font-size: 13px;
+      color: var(--ink-soft);
+      padding: 5px 8px;
+      border-left: 2px solid transparent;
+      border-radius: 0 6px 6px 0;
+      transition: all 0.18s;
+    }
+    .toc-list a:hover {
+      color: var(--brand);
+      border-left-color: var(--brand);
+      background: var(--brand-pale);
+    }
+    .hot-list li {
+      display: flex;
+      gap: 9px;
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--line);
+      font-size: 13px;
+    }
+    .hot-list li:last-child { border-bottom: 0; }
+    .hot-list .rank {
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 5px;
+      background: #f3ece5;
+      color: #a25a3c;
+      font-size: 11px;
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+    }
+    .hot-list li:nth-child(1) .rank { background: var(--brand); color: #fff; }
+    .hot-list li:nth-child(2) .rank { background: var(--brand-soft); color: #fff; }
+    .hot-list li:nth-child(3) .rank { background: #f6c9a8; color: #7a3a1d; }
+    .hot-list .txt { color: var(--ink-soft); line-height: 1.5; }
+
+    /* ===== 中栏板块通用 ===== */
+    .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 26px 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+      scroll-margin-top: calc(var(--sticky-total) + 18px);
+    }
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .section-head h2 {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-head h2::before {
+      content: "";
+      width: 6px;
+      height: 20px;
+      border-radius: 3px;
+      background: linear-gradient(180deg, var(--brand), var(--brand-soft));
+    }
+    .section-head .sub {
+      font-size: 13px;
+      color: var(--ink-soft);
+    }
+
+    /* 内容简介 */
+    .intro-text p { margin-bottom: 12px; color: #4a423c; }
+    .intro-text p:last-child { margin-bottom: 0; }
+    .intro-text strong { color: var(--brand); font-weight: 700; }
+
+    /* 热门卡片 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    .content-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 15px 16px;
+      background: #fffdfb;
+      transition: border-color 0.18s, box-shadow 0.18s, transform 0.18s;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .content-card:hover {
+      border-color: #f0c5ad;
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .type-badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 9px;
+      border-radius: 999px;
+      background: var(--brand-pale);
+      color: #a25a3c;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+    }
+    .card-meta { font-size: 11px; color: #b6a99e; white-space: nowrap; }
+    .content-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.45;
+      color: var(--ink);
+    }
+    .content-card .blurb {
+      font-size: 12.5px;
+      color: var(--ink-soft);
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: auto;
+    }
+    .card-tags span {
+      font-size: 11px;
+      color: #8a7d73;
+      background: #f6f1ec;
+      padding: 1px 8px;
+      border-radius: 999px;
+    }
+
+    /* 最新更新列表 */
+    .update-list li {
+      display: flex;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--line);
+      align-items: baseline;
+    }
+    .update-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+    .update-list .u-name {
+      font-weight: 600;
+      font-size: 14px;
+      flex-shrink: 0;
+      min-width: 150px;
+      color: var(--ink);
+    }
+    .update-list .u-summary {
+      font-size: 13px;
+      color: var(--ink-soft);
+      line-height: 1.55;
+    }
+    .update-list .u-time {
+      margin-left: auto;
+      font-size: 11.5px;
+      color: #b6a99e;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 11px;
+    }
+    .category-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 14px 12px;
+      text-align: center;
+      background: #fffdfb;
+      transition: all 0.18s;
+      display: block;
+    }
+    .category-item:hover {
+      border-color: var(--brand-soft);
+      background: var(--brand-pale);
+      transform: translateY(-2px);
+    }
+    .category-item .c-icon { font-size: 22px; margin-bottom: 6px; }
+    .category-item .c-name {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 2px;
+    }
+    .category-item .c-count { font-size: 11px; color: #b6a99e; }
+
+    /* 深度解析 */
+    .deep h3 {
+      font-size: 16.5px;
+      font-weight: 700;
+      margin: 22px 0 10px;
+      color: var(--ink);
+      padding-left: 12px;
+      border-left: 3px solid var(--brand-soft);
+    }
+    .deep h3:first-of-type { margin-top: 4px; }
+    .deep p { margin-bottom: 11px; color: #4a423c; }
+    .deep ul {
+      margin: 8px 0 14px 4px;
+      padding-left: 18px;
+      list-style: disc;
+    }
+    .deep li {
+      margin-bottom: 6px;
+      color: #4a423c;
+      font-size: 14.5px;
+    }
+    .deep li::marker { color: var(--brand); }
+    .deep .highlight {
+      background: #fff8f2;
+      border-left: 3px solid var(--brand-soft);
+      padding: 12px 16px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 14px;
+      color: #6b4a36;
+      margin: 14px 0;
+    }
+
+    /* 体验指南 */
+    .guide-steps {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    .guide-step {
+      background: #fffdfb;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 15px 16px;
+      position: relative;
+    }
+    .guide-step .step-no {
+      display: inline-grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--brand);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .guide-step h3 { font-size: 14.5px; font-weight: 700; margin-bottom: 5px; }
+    .guide-step p { font-size: 13px; color: var(--ink-soft); line-height: 1.6; }
+
+    /* FAQ */
+    .faq-item {
+      border-bottom: 1px solid var(--line);
+      padding: 4px 0;
+    }
+    .faq-item:last-child { border-bottom: 0; }
+    .faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 12px 4px;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: color 0.18s;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::before {
+      content: "?";
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--brand-pale);
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+    }
+    .faq-item summary:hover { color: var(--brand); }
+    .faq-item[open] summary { color: var(--brand); }
+    .faq-item .answer {
+      padding: 0 4px 14px 36px;
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+
+    /* 评论 */
+    .comment-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .comment-item {
+      background: #fffdfb;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+    }
+    .comment-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .avatar {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .comment-name { font-size: 13px; font-weight: 600; }
+    .comment-time { font-size: 11px; color: #b6a99e; margin-left: auto; }
+    .comment-text { font-size: 12.5px; color: var(--ink-soft); line-height: 1.6; }
+
+    /* 相关资讯 */
+    .news-list li {
+      display: flex;
+      gap: 14px;
+      padding: 11px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+    .news-list li:last-child { border-bottom: 0; }
+    .news-date {
+      flex-shrink: 0;
+      font-size: 11.5px;
+      color: #a25a3c;
+      background: var(--brand-pale);
+      border-radius: 6px;
+      padding: 2px 8px;
+      height: fit-content;
+      margin-top: 2px;
+      white-space: nowrap;
+    }
+    .news-body h3 { font-size: 14px; font-weight: 700; margin-bottom: 3px; }
+    .news-body p { font-size: 12.5px; color: var(--ink-soft); line-height: 1.55; }
+
+    /* 相关推荐 */
+    .rec-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 9px;
+    }
+    .rec-list a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--ink-soft);
+      padding: 9px 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      transition: all 0.18s;
+    }
+    .rec-list a:hover {
+      border-color: var(--brand-soft);
+      background: var(--brand-pale);
+      color: var(--brand);
+    }
+    .rec-list .arrow { color: var(--brand-soft); font-weight: 700; margin-left: auto; }
+
+    /* 创作者证言 */
+    .quote-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    .quote-card {
+      background: linear-gradient(140deg, #fffaf5, #fff3e9);
+      border: 1px solid #f6e3d5;
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      position: relative;
+    }
+    .quote-card::before {
+      content: "“";
+      position: absolute;
+      top: 2px;
+      left: 12px;
+      font-size: 38px;
+      font-weight: 900;
+      color: #f0c5ad;
+      line-height: 1;
+      font-family: Georgia, serif;
+    }
+    .quote-card p {
+      font-size: 13px;
+      color: #5c4a3d;
+      line-height: 1.7;
+      padding: 10px 0 8px;
+      position: relative;
+      z-index: 1;
+    }
+    .quote-author {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--brand);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .quote-author::before {
+      content: "";
+      width: 16px;
+      height: 2px;
+      background: var(--brand-soft);
+      border-radius: 2px;
+    }
+
+    /* 搜索无结果 */
+    .no-result {
+      padding: 24px 16px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-soft);
+      background: #fffdfb;
+      border: 1px dashed var(--line-strong);
+      border-radius: var(--radius-sm);
+      margin-top: 14px;
+    }
+    .no-result strong { color: var(--brand); }
+
+    /* 页尾 */
+    .site-footer {
+      background: #2f2a26;
+      color: #e9ded4;
+      padding: 42px 24px 24px;
+      margin-top: 10px;
+    }
+    .footer-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.4fr repeat(3, 1fr);
+      gap: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .footer-brand .brand-name { color: #fff; font-size: 22px; margin-bottom: 10px; display: block; }
+    .footer-brand p { font-size: 13px; color: #b6a99e; line-height: 1.7; max-width: 300px; }
+    .footer-col h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #f4a261;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+    .footer-col a {
+      display: block;
+      font-size: 12.5px;
+      color: #b6a99e;
+      padding: 3px 0;
+      transition: color 0.18s;
+    }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 11.5px;
+      color: #8a7d73;
+    }
+
+    /* 响应式 */
+    @media (max-width: 1100px) {
+      .layout { grid-template-columns: 160px minmax(0, 1fr); }
+      .col-right { display: none; }
+      .hero-inner { grid-template-columns: 1fr; gap: 30px; }
+      .hero-visual { order: -1; }
+      .hero-visual svg { width: min(100%, 280px); }
+      .card-grid { grid-template-columns: 1fr; }
+      .comment-list { grid-template-columns: 1fr; }
+      .quote-grid { grid-template-columns: 1fr; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 760px) {
+      .site-header { padding: 0 14px; gap: 12px; }
+      .header-nav { display: none; }
+      .header-search { flex: 1; }
+      .header-search input { width: 100%; }
+      .layout {
+        grid-template-columns: 1fr;
+        padding: 18px 14px 40px;
+        gap: 18px;
+      }
+      .col-left { position: static; order: 2; }
+      .col-left .side-card { margin-bottom: 14px; }
+      .col-right { position: static; display: block; order: 3; }
+      .section { padding: 20px 16px; }
+      .hero-inner { padding: 34px 16px 30px; }
+      .hero h1 { font-size: 32px; }
+      .hero-stats { gap: 18px; }
+      .update-list li { flex-wrap: wrap; gap: 4px 10px; }
+      .update-list .u-name { min-width: 0; }
+      .update-list .u-time { margin-left: 0; }
+      .guide-steps { grid-template-columns: 1fr; }
+      .rec-list { grid-template-columns: 1fr; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-inner { grid-template-columns: 1fr 1fr; gap: 22px; }
+      .notice-bar { font-size: 11.5px; }
+    }
+    @media (max-width: 400px) {
+      .footer-inner { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 28px; }
+    }
+    :focus-visible {
+      outline: 2px solid var(--brand);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--brand);
+      color: #fff;
+      padding: 8px 16px;
+      z-index: 999;
+      border-radius: 0 0 8px 0;
+    }
+    .skip-link:focus { left: 0; }
+  </style>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">跳到主要内容</a>
+
+<!-- 吸顶公告条 -->
+<div class="notice-bar" role="status" aria-label="站点公告">
+  <span>柚子猫春季更新：治愈短篇动画合集已上线，<strong>每周三、周六</strong> 固定更新，收藏追更方便。</span>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-header">
+  <a href="/#top" class="brand" aria-label="柚子猫首页">
+    <span class="brand-mark" aria-hidden="true">
+      <svg width="26" height="26" viewBox="0 0 64 64" fill="none">
+        <circle cx="32" cy="32" r="30" fill="#f4a261"/>
+        <circle cx="22" cy="26" r="5" fill="#fff"/>
+        <circle cx="42" cy="26" r="5" fill="#fff"/>
+        <circle cx="22" cy="26" r="2.2" fill="#2f2a26"/>
+        <circle cx="42" cy="26" r="2.2" fill="#2f2a26"/>
+        <path d="M25 41 Q32 48 39 41" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+        <path d="M18 18 L23 22" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M46 18 L41 22" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="brand-name">柚子猫</span>
+  </a>
+  <nav class="header-nav" aria-label="主题导航">
+    <a href="/#intro">内容简介</a>
+    <a href="/#hot">热门推荐</a>
+    <a href="/#latest">最新更新</a>
+    <a href="/#category">分类入口</a>
+    <a href="/#deep">深度解析</a>
+    <a href="/#faq">常见问题</a>
+    <a href="/#comments">用户评论</a>
+    <a href="/#news">相关资讯</a>
+  </nav>
+  <form class="header-search" role="search" aria-label="站内搜索" onsubmit="return false;">
+    <input type="search" id="siteSearch" placeholder="搜内容 / 类型 / 标签" aria-label="搜索站内内容">
+    <button type="button" id="searchBtn">搜索</button>
+  </form>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="hero-eyebrow"><span class="dot" aria-hidden="true"></span>治愈系猫咪日常内容门户</span>
+      <h1>柚子猫</h1>
+      <p class="hero-desc">短篇动画、生活片段、图文记录与创作者推荐。用一只橘猫的日常，陪你度过通勤、午休和睡前放松的碎片时间。</p>
+      <div class="hero-actions">
+        <a href="/#hot" class="btn btn-primary">看热门短篇动画</a>
+        <a href="/#category" class="btn btn-ghost">按类型筛选</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="num">128</div>
+          <div class="lbl">短篇动画</div>
+        </div>
+        <div>
+          <div class="num">46</div>
+          <div class="lbl">图文记录</div>
+        </div>
+        <div>
+          <div class="num">9.2</div>
+          <div class="lbl">平均评分</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fff7ef"/>
+            <stop offset="1" stop-color="#fde8d8"/>
+          </linearGradient>
+        </defs>
+        <rect x="8" y="8" width="304" height="264" rx="28" fill="url(#bgGrad)" stroke="#f3d8c4" stroke-width="2"/>
+        <circle cx="250" cy="58" r="20" fill="#f4a261" opacity="0.35"/>
+        <circle cx="68" cy="210" r="12" fill="#e76f51" opacity="0.18"/>
+        <!-- 猫身 -->
+        <ellipse cx="160" cy="196" rx="78" ry="48" fill="#f4a261"/>
+        <ellipse cx="160" cy="200" rx="58" ry="34" fill="#fde8d8"/>
+        <!-- 猫头 -->
+        <circle cx="160" cy="128" r="52" fill="#f4a261"/>
+        <!-- 耳朵 -->
+        <path d="M118 94 L106 52 L140 76 Z" fill="#f4a261"/>
+        <path d="M202 94 L214 52 L180 76 Z" fill="#f4a261"/>
+        <path d="M122 88 L114 64 L136 78 Z" fill="#fde8d8"/>
+        <path d="M198 88 L206 64 L184 78 Z" fill="#fde8d8"/>
+        <!-- 眼睛 -->
+        <circle cx="140" cy="122" r="9" fill="#2f2a26"/>
+        <circle cx="180" cy="122" r="9" fill="#2f2a26"/>
+        <circle cx="143" cy="119" r="3" fill="#fff"/>
+        <circle cx="183" cy="119" r="3" fill="#fff"/>
+        <!-- 鼻子嘴 -->
+        <path d="M154 140 Q160 147 166 140" stroke="#a25a3c" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M160 136 L160 141" stroke="#a25a3c" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- 胡须 -->
+        <path d="M110 128 L88 122" stroke="#e0a87a" stroke-width="2" stroke-linecap="round"/>
+        <path d="M110 136 L86 136" stroke="#e0a87a" stroke-width="2" stroke-linecap="round"/>
+        <path d="M210 128 L232 122" stroke="#e0a87a" stroke-width="2" stroke-linecap="round"/>
+        <path d="M210 136 L234 136" stroke="#e0a87a" stroke-width="2" stroke-linecap="round"/>
+        <!-- 尾巴 -->
+        <path d="M238 208 Q276 196 270 160 Q266 138 248 146" stroke="#f4a261" stroke-width="14" fill="none" stroke-linecap="round"/>
+        <!-- 小爪 -->
+        <ellipse cx="126" cy="234" rx="18" ry="9" fill="#f4a261"/>
+        <ellipse cx="194" cy="234" rx="18" ry="9" fill="#f4a261"/>
+        <circle cx="126" cy="234" r="4" fill="#fde8d8"/>
+        <circle cx="194" cy="234" r="4" fill="#fde8d8"/>
+        <!-- 装饰叶子 -->
+        <path d="M248 96 Q262 82 270 96 Q258 104 248 96 Z" fill="#8fbc8f" opacity="0.7"/>
+        <path d="M62 120 Q48 108 42 122 Q54 130 62 120 Z" fill="#8fbc8f" opacity="0.6"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏主内容 -->
+<div class="layout" id="main-content">
+
+  <!-- 左栏 -->
+  <aside class="col-left" aria-label="频道与分类导航">
+    <div class="side-card">
+      <div class="side-title">频道导航</div>
+      <ul class="channel-list">
+        <li><a href="/#intro">内容简介 <span class="count">01</span></a></li>
+        <li><a href="/#hot">热门推荐 <span class="count">12</span></a></li>
+        <li><a href="/#latest">最新更新 <span class="count">10</span></a></li>
+        <li><a href="/#category">分类入口 <span class="count">08</span></a></li>
+        <li><a href="/#deep">深度解析 <span class="count">06</span></a></li>
+        <li><a href="/#guide">体验指南 <span class="count">04</span></a></li>
+        <li><a href="/#faq">常见问题 <span class="count">06</span></a></li>
+        <li><a href="/#comments">用户评论 <span class="count">14</span></a></li>
+        <li><a href="/#news">相关资讯 <span class="count">06</span></a></li>
+        <li><a href="/#recommend">相关推荐 <span class="count">08</span></a></li>
+        <li><a href="/#quotes">创作者说 <span class="count">04</span></a></li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <div class="side-title">热门标签</div>
+      <div class="tag-cloud">
+        <a href="/#hot">橘猫日常</a>
+        <a href="/#hot">睡前放松</a>
+        <a href="/#category">短篇动画</a>
+        <a href="/#hot">通勤陪伴</a>
+        <a href="/#category">治愈系</a>
+        <a href="/#latest">猫咪vlog</a>
+        <a href="/#recommend">温馨图文</a>
+        <a href="/#deep">一人一猫</a>
+        <a href="/#hot">无声动画</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 中栏 -->
+  <main class="col-main">
+
+    <!-- 1 内容简介 -->
+    <section class="section" id="intro">
+      <div class="section-head">
+        <h2>内容简介</h2>
+        <span class="sub">关于柚子猫的日常世界</span>
+      </div>
+      <div class="intro-text">
+        <p><strong>柚子猫</strong>是一个以橘猫日常为核心的主题内容门户，围绕短篇动画、图文记录和生活片段组织内容。这里没有复杂的长篇叙事，每一条内容都控制在几分钟内可以看完，适合通勤路上、午休间隙或睡前放松时浏览。页面的分类和标签都按真实观看场景命名，方便你快速找到想看的类型。</p>
+        <p>如果你喜欢治愈系短篇动画，可以从“无声小剧场”和“三分钟日常”两个方向入手；如果你更偏爱图文记录，那么“猫咪生活片段”和“一人一猫”系列会更贴近你的需求。所有内容都围绕同一只橘猫展开，但每条内容独立成篇，不需要按顺序观看。</p>
+        <p>对于第一次接触柚子猫的访客，建议先看热门推荐里的短篇动画，再根据分类入口选择合适的类型。更新频率为每周三和周六，追更的用户可以收藏页面或直接记住固定更新时间。页面右侧的热门条目和延伸阅读会随内容更新轮换，适合在看完主推荐后继续浏览。</p>
+      </div>
+    </section>
+
+    <!-- 2 热门内容推荐 -->
+    <section class="section" id="hot">
+      <div class="section-head">
+        <h2>热门短篇动画与图文推荐</h2>
+        <span class="sub">近期播放与收藏较高</span>
+      </div>
+      <div class="card-grid" id="hotGrid">
+        <article class="content-card">
+          <div class="card-top">
+            <span class="type-badge">短篇动画</span>
+            <span class="card-meta">播放 2.4w · 评分 9.3</span>
+          </div>
+          <h3>《窗台上的午后》无声小剧场</h3>
+          <p class="blurb">橘猫在窗台晒太阳，追逐光斑的三分钟。没有台词，只有环境音和轻柔配乐，适合午休时安静看完。</p>
+          <div class="card-tags"><span>无声动画</span><span>午休放松</span><span>橘猫日常</span></div>
+        </article>
+        <article class="content-card">
+          <div class="card-top">
+            <span class="type-badge">图文记录</span>
+            <span class="card-meta">收藏 1.1w · 评分 9.1</span>
+          </div>
+          <h3>《一人一猫的早餐时间》</h3>
+          <p class="blurb">从煮咖啡到猫粮分装，十二张图记录清晨的固定流程。画面偏暖调，适合喜欢慢节奏生活记录的读者。</p>
+          <div class="card-tags"><span>生活片段</span><span>慢节奏</span><span>早餐记录</span></div>
+        </article>
+        <article class="content-card">
+          <div class="card-top">
+            <span class="type-badge">短篇动画</span>
+            <span class="card-meta">播放 3.1w · 评分 9.5</span>
+          </div>
+          <h3>《柚子猫的纸箱探险》</h3>
+          <p class="blurb">一个快递纸箱能玩多久？从试探到占领，四分钟完整记录。节奏轻快，适合通勤路上看。</p>
+          <div class="card-tags"><span>纸箱</span><span>轻快节奏</span><span>通勤陪伴</span></div>
+        </article>
+        <article class="content-card">
+          <div class="card-top">
+            <span class="type-badge">图文记录</span>
+            <span class="card-meta">收藏 8.6k · 评分 8.9</span>
+          </div>
+          <h3>《雨天不出门，和猫一起待着》</h3>
+          <p class="blurb">雨天居家记录，包含猫咪躲雨、窗边发呆和沙发午睡三段。适合睡前翻看，节奏平缓。</p>
+          <div class="card-tags"><span>雨天</span><span>睡前看</span><span>居家记录</span></div>
+        </article>
+        <article class="content-card">
+          <div class="card-top">
+            <span class="type-badge">短篇动画</span>
+            <span class="card-meta">播放 1.9w · 评分 9.0</span>
+          </div>
+          <h3>《深夜巡逻的柚子猫》</h3>
+          <p class="blurb">关灯后的客厅，橘猫开始夜间巡视。微光画面搭配小声效，适合喜欢安静氛围的观众。</p>
+          <div class="card-tags"><span>夜间</span><span>安静氛围</span><span>无声动画</span></div>
+        </article>
+        <article class="content-card">
+          <div class="card-top">
+            <span class="type-badge">图文记录</span>
+            <span class="card-meta">收藏 7.2k · 评分 8.8</span>
+          </div>
+          <h3>《换季时柚子猫的睡姿变化》</h3>
+          <p class="blurb">从缩成一团到摊成猫饼，按温度记录睡姿。文字简短，图多，适合快速浏览。</p>
+          <div class="card-tags"><span>换季</span><span>睡姿</span><span>快速浏览</span></div>
+        </article>
+      </div>
+      <div class="no-result" id="searchNoResult" hidden>没有找到与 <strong id="searchTermEcho"></strong> 相关的内容，试试“短篇动画”“睡前放松”或“通勤陪伴”。</div>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="section" id="latest">
+      <div class="section-head">
+        <h2>最新更新与热门动态</h2>
+        <span class="sub">固定周三、周六更新</span>
+      </div>
+      <ul class="update-list">
+        <li><span class="u-name">《纸袋里的柚子猫》</span><span class="u-summary">新到一个牛皮纸袋，橘猫研究了十分钟，最后决定睡在里面。</span><span class="u-time">03-22</span></li>
+        <li><span class="u-name">《午后三点，阳光刚好》</span><span class="u-summary">短篇无声动画更新，记录阳光移动到猫身上的全过程。</span><span class="u-time">03-22</span></li>
+        <li><span class="u-name">《猫碗旁边的等待》</span><span class="u-summary">图文记录，从下午四点开始蹲守晚饭，一共八张图。</span><span class="u-time">03-19</span></li>
+        <li><span class="u-name">《柚子猫与扫地机器人》</span><span class="u-summary">第一次近距离观察扫地机器人，试探、跟踪、最后骑上去。</span><span class="u-time">03-19</span></li>
+        <li><span class="u-name">《深夜加餐时间》</span><span class="u-summary">一人一猫的夜宵记录，短篇动画加三张静帧。</span><span class="u-time">03-16</span></li>
+        <li><span class="u-name">《窗台外的鸟》</span><span class="u-summary">橘猫在窗台看鸟，尾巴有节奏地摆动，四分钟无声观察。</span><span class="u-time">03-16</span></li>
+        <li><span class="u-name">《旧毛衣变成猫窝》</span><span class="u-summary">手工过程记录，旧毛衣改造成猫窝，柚子猫验收全过程。</span><span class="u-time">03-13</span></li>
+        <li><span class="u-name">《柚子猫的喝水仪式》</span><span class="u-summary">每天固定时间用爪子拨水碗，持续两分钟的固定流程。</span><span class="u-time">03-13</span></li>
+        <li><span class="u-name">《沙发扶手观察报告》</span><span class="u-summary">图文系列新一篇，分析橘猫为什么偏爱沙发右侧扶手。</span><span class="u-time">03-10</span></li>
+        <li><span class="u-name">《三月换毛季记录》</span><span class="u-summary">从梳毛到收集毛球，换毛季的日常片段，附带清理小技巧。</span><span class="u-time">03-10</span></li>
+      </ul>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="section" id="category">
+      <div class="section-head">
+        <h2>按类型找内容</h2>
+        <span class="sub">八个常用分类入口</span>
+      </div>
+      <div class="category-grid">
+        <a class="category-item" href="/#hot">
+          <div class="c-icon" aria-hidden="true">🎬</div>
+          <div class="c-name">短篇动画</div>
+          <div class="c-count">42 条</div>
+        </a>
+        <a class="category-item" href="/#hot">
+          <div class="c-icon" aria-hidden="true">📷</div>
+          <div class="c-name">图文记录</div>
+          <div class="c-count">36 条</div>
+        </a>
+        <a class="category-item" href="/#latest">
+          <div class="c-icon" aria-hidden="true">🌙</div>
+          <div class="c-name">睡前放松</div>
+          <div class="c-count">28 条</div>
+        </a>
+        <a class="category-item" href="/#latest">
+          <div class="c-icon" aria-hidden="true">🚇</div>
+          <div class="c-name">通勤陪伴</div>
+          <div class="c-count">31 条</div>
+        </a>
+        <a class="category-item" href="/#hot">
+          <div class="c-icon" aria-hidden="true">🔇</div>
+          <div class="c-name">无声小剧场</div>
+          <div class="c-count">19 条</div>
+        </a>
+        <a class="category-item" href="/#deep">
+          <div class="c-icon" aria-hidden="true">🏠</div>
+          <div class="c-name">一人一猫</div>
+          <div class="c-count">24 条</div>
+        </a>
+        <a class="category-item" href="/#news">
+          <div class="c-icon" aria-hidden="true">🍂</div>
+          <div class="c-name">换季记录</div>
+          <div class="c-count">15 条</div>
+        </a>
+        <a class="category-item" href="/#recommend">
+          <div class="c-icon" aria-hidden="true">🪟</div>
+          <div class="c-name">窗台观察</div>
+          <div class="c-count">12 条</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="section" id="deep">
+      <div class="section-head">
+        <h2>深度解析：柚子猫的内容为什么适合碎片时间</h2>
+        <span class="sub">类型、节奏与观看场景</span>
+      </div>
+      <div class="deep">
+        <h3>短篇动画的长度与节奏设计</h3>
+        <p>柚子猫的短篇动画大多控制在三到五分钟之间，这个长度是有意设计的。通勤地铁的一段路程、午休结束前的空档、睡前刷手机的几分钟，都刚好能完整看完一条内容。没有前情提要，也没有必须连续观看的剧情线，每一条动画都从日常场景直接开始。</p>
+        <p>节奏上偏慢，但不会拖沓。画面里保留了大量环境细节，比如窗外的光线变化、猫爪踩在地板上的声音、水碗被拨动时的水纹。这些细节不需要台词解释，观众可以按自己的节奏接收。对于喜欢安静内容的人来说，这种处理方式比强情节的短片更耐看。</p>
+        <div class="highlight">如果你习惯在睡前看内容，建议从“无声小剧场”和“夜间巡视”两个方向入手，画面偏暗、音效轻柔，不会带来额外刺激。</div>
+
+        <h3>图文记录与短篇动画的区别</h3>
+        <p>图文记录和短篇动画虽然都围绕同一只橘猫，但观看体验完全不同。短篇动画提供的是连续的视听节奏，适合一次性看完；图文记录则更像翻阅相册，可以随时停下，再回来接着看。</p>
+        <ul>
+          <li><strong>信息密度不同：</strong>图文记录通常配有简短说明，解释画面里的动作或背景；短篇动画则把信息全部放在画面和声音里。</li>
+          <li><strong>观看场景不同：</strong>图文更适合通勤时单手滑动浏览，动画则适合有耳机、能安静看几分钟的场景。</li>
+          <li><strong>更新频率相近：</strong>两类内容都按周三、周六的节奏更新，交替出现，不会让某一类长时间断更。</li>
+        </ul>
+
+        <h3>“一人一猫”系列的生活感从哪里来</h3>
+        <p>这个系列的内容不刻意营造戏剧冲突，而是把注意力放在固定流程上：早上先给猫添粮再煮咖啡，下午收衣服时猫跟在后面，晚上关灯前检查一遍猫碗。这些流程每天都在重复，但每次的细节又略有不同。</p>
+        <p>正是这种重复中的微小变化，让内容有了生活感。观众看到的不是被设计过的情节，而是一段被记录下来的日常。对于独居或喜欢安静生活的人来说，这种内容提供的是一种陪伴感，而不是信息量。</p>
+
+        <h3>比较：短篇动画和图文记录怎么选</h3>
+        <p>如果你时间完整、有耳机、想安静看几分钟，优先选短篇动画；如果你在通勤路上、需要随时停下、或者只想快速翻几张图，图文记录更合适。两者没有高下之分，只是观看场景不同。柚子猫的页面把两类内容分开展示，也是为了方便你按当下场景快速选择。</p>
+      </div>
+    </section>
+
+    <!-- 6 体验指南 -->
+    <section class="section" id="guide">
+      <div class="section-head">
+        <h2>体验指南</h2>
+        <span class="sub">从浏览到追更的四步</span>
+      </div>
+      <div class="guide-steps">
+        <div class="guide-step">
+          <span class="step-no">1</span>
+          <h3>先看热门推荐</h3>
+          <p>从热门卡片里挑一条感兴趣的内容，标题和标签会直接告诉你类型和适合的观看场景。</p>
+        </div>
+        <div class="guide-step">
+          <span class="step-no">2</span>
+          <h3>用分类缩小范围</h3>
+          <p>分类入口按“短篇动画”“睡前放松”“通勤陪伴”等实际场景命名，点进去就能看到对应内容。</p>
+        </div>
+        <div class="guide-step">
+          <span class="step-no">3</span>
+          <h3>记住更新时间</h3>
+          <p>每周三和周六固定更新，最新更新列表会按时间排序，方便你回来查看新内容。</p>
+        </div>
+        <div class="guide-step">
+          <span class="step-no">4</span>
+          <h3>延伸阅读</h3>
+          <p>看完主推荐后，右栏的热门条目和相关推荐会提供同类型或相近场景的内容，继续浏览即可。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="section" id="faq">
+      <div class="section-head">
+        <h2>常见问题</h2>
+        <span class="sub">关于内容类型与观看方式</span>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>柚子猫的短篇动画一般多长？适合什么人看？</summary>
+          <div class="answer">大部分短篇动画在三到五分钟之间，节奏偏慢，没有复杂台词。适合喜欢安静内容、想在通勤或睡前放松几分钟的人，也适合第一次接触治愈系日常动画的观众。</div>
+        </details>
+        <details class="faq-item">
+          <summary>图文记录和短篇动画应该先看哪个？</summary>
+          <div class="answer">如果你有完整的三五分钟、能戴耳机，建议先看短篇动画；如果你在移动中、需要随时停下，或者只想快速翻几张图，图文记录更合适。两类内容独立更新，不按顺序看也没有影响。</div>
+        </details>
+        <details class="faq-item">
+          <summary>内容多久更新一次？</summary>
+          <div class="answer">固定每周三和周六更新，短篇动画和图文记录交替出现。最新更新列表会按时间排列，方便查看近期上线的内容。</div>
+        </details>
+        <details class="faq-item">
+          <summary>喜欢睡前放松，应该从哪个分类入手？</summary>
+          <div class="answer">建议看“睡前放松”和“无声小剧场”两个分类，内容画面偏暗、音效轻柔，节奏平缓。夜间巡视、窗台观察这类主题也比较适合睡前浏览。</div>
+        </details>
+        <details class="faq-item">
+          <summary>和一般猫咪视频比，柚子猫的内容有什么不同？</summary>
+          <div class="answer">柚子猫的内容更强调固定场景和日常流程，比如早餐时间、换毛季、雨天居家，而不是单纯展示猫咪动作。短篇动画保留环境音、减少台词，图文记录则配有简短说明，两类内容都围绕同一只橘猫展开。</div>
+        </details>
+        <details class="faq-item">
+          <summary>通勤路上适合看哪种内容？</summary>
+          <div class="answer">通勤时建议选图文记录或三分钟以内的短篇动画，不需要连续观看，随时可以停下。页面标签里标注了“通勤陪伴”的内容，都是按这个场景挑选的。</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="section" id="comments">
+      <div class="section-head">
+        <h2>用户评论</h2>
+        <span class="sub">来自近期浏览者的反馈</span>
+      </div>
+      <div class="comment-list">
+        <div class="comment-item">
+          <div class="comment-head"><span class="avatar" style="background:#e76f51">橙</span><span class="comment-name">橙子汽水</span><span class="comment-time">03-21</span></div>
+          <p class="comment-text">窗台那篇动画看了两遍，环境音做得很舒服，午休看刚好。</p>
+        </div>
+        <div class="comment-item">
+          <div class="comment-head"><span class="avatar" style="background:#f4a261">晚</span><span class="comment-name">晚风慢慢</span><span class="comment-time">03-21</span></div>
+          <p class="comment-text">图文记录很适合通勤翻，每张图配的文字不多，但能看懂发生了什么。</p>
+        </div>
+        <div class="comment-item">
+          <div class="comment-head"><span class="avatar" style="background:#8fbc8f">林</span><span class="comment-name">林间小径</span><span class="comment-time">03-20</span></div>
+          <p class="comment-text">纸箱探险那条节奏挺轻快的，四分钟看完不拖。</p>
+        </div>
+        <div class="comment-item">
+          <div class="comment-head"><span class="avatar" style="background:#b07aa1">半</span><span class="comment-name">半杯拿铁</span><span class="comment-time">03-20</span></div>
+          <p class="comment-text">一人一猫系列的生活感很强，不刻意，看着很放松。</p>
+        </div>
+        <div class="comment-item">
+          <div class="comment-head"><span class="avatar" style="background:#e76f51">小</span><span class="comment-name">小满</span><span class="comment-time">03-19</span></div>
+          <p class="comment-text">更新频率稳定这点很好，周三周六不用特意去记。</p>
+        </div>
+        <div class="comment-item">
+          <div class="comment-head"><span class="avatar" style="background:#6b8e9e">一</span><span class="comment-name">一只猫饼</span><span class="comment-time">03-19</span></div>
+          <p class="comment-text">喜欢无声动画，没有旁白反而更专注。希望多出夜间主题。</p>
+        </div>
+        <div class="comment-item">
+          <div class="comment-head"><span class="avatar" style="background:#c98a5e">南</span><span class="comment-name">南窗</span><span class="comment-time">03-18</span></div>
+          <p class="comment-text">换季记录那篇挺实用的，梳毛和清理毛球的步骤写得很清楚。</p>
+        </div>
+        <div class="comment-item">
+          <div class="comment-head"><span class="avatar" style="background:#8fbc8f">山</span><span class="comment-name">山茶</span><span class="comment-time">03-18</span></div>
+          <p class="comment-text">整体页面很干净，分类是按场景来的，不用想太多就能找到想看的。</p>
+        </div>
+        <div class="comment-item">
+          <div class="comment-head"><span class="avatar" style="background:#b07aa1">星</span><span class="comment-name">星野</span><span class="comment-time">03-17</span></div>
+          <p class="comment-text">睡前放松分类里的内容确实比较平缓，看完容易静下来。</p>
+        </div>
+        <div class="comment-item">
+          <div class="comment-head"><span class="avatar" style="background:#e76f51">热</span><span class="comment-name">热美式</span><span class="comment-time">03-17</span></div>
+          <p class="comment-text">个人更喜欢图文记录，短篇动画也不错，但通勤时不太方便看。</p>
+        </div>
+        <div class="comment-item">
+          <div class="comment-head"><span class="avatar" style="background:#6b8e9e">阿</span><span class="comment-name">阿岛</span><span class="comment-time">03-16</span></div>
+          <p class="comment-text">扫地机器人那篇挺有趣的，猫的反应很真实。</p>
+        </div>
+        <div class="comment-item">
+          <div class="comment-head"><span class="avatar" style="background:#c98a5e">路</span><span class="comment-name">路过看看</span><span class="comment-time">03-16</span></div>
+          <p class="comment-text">第一次来，从热门推荐点进去看了两篇，类型标签写得清楚，省了筛选时间。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="section" id="news">
+      <div class="section-head">
+        <h2>相关资讯</h2>
+        <span class="sub">内容动态与主题观察</span>
+      </div>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">03-22</span>
+          <div class="news-body">
+            <h3>短篇无声动画的观看场景正在变多</h3>
+            <p>通勤、午休、睡前三个场景对内容长度的要求不同，三到五分钟的短篇动画适配度更高。</p>
+          </div>
+        </li>
+        <li>
+          <span class="news-date">03-19</span>
+          <div class="news-body">
+            <h3>“一人一猫”生活记录为什么受欢迎</h3>
+            <p>固定流程中的微小变化提供了陪伴感，观众不需要投入连续注意力，也能感受到生活节奏。</p>
+          </div>
+        </li>
+        <li>
+          <span class="news-date">03-17</span>
+          <div class="news-body">
+            <h3>图文记录与短视频的内容分工</h3>
+            <p>图文适合随时停下、快速浏览，短视频适合有耳机的完整时段，两者在通勤场景中形成互补。</p>
+          </div>
+        </li>
+        <li>
+          <span class="news-date">03-14</span>
+          <div class="news-body">
+            <h3>换毛季内容集中上线</h3>
+            <p>三月换毛季相关记录增多，梳毛、清理毛球和猫窝整理成为近期图文记录的主要方向。</p>
+          </div>
+        </li>
+        <li>
+          <span class="news-date">03-11</span>
+          <div class="news-body">
+            <h3>夜间主题短篇动画的反馈</h3>
+            <p>夜间巡视、关灯后的客厅等主题收到较多正向反馈，安静氛围和微光画面是主要关注点。</p>
+          </div>
+        </li>
+        <li>
+          <span class="news-date">03-08</span>
+          <div class="news-body">
+            <h3>分类命名方式对浏览效率的影响</h3>
+            <p>按观看场景而非抽象主题命名，能减少用户在分类入口前的犹豫时间，更快进入内容。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="section" id="recommend">
+      <div class="section-head">
+        <h2>相关推荐</h2>
+        <span class="sub">按具体方向延伸</span>
+      </div>
+      <div class="rec-list">
+        <a href="/#hot">橘猫日常短篇动画合集 <span class="arrow">→</span></a>
+        <a href="/#latest">睡前放松无声小剧场 <span class="arrow">→</span></a>
+        <a href="/#hot">通勤三分钟图文记录 <span class="arrow">→</span></a>
+        <a href="/#deep">一人一猫早餐流程 <span class="arrow">→</span></a>
+        <a href="/#news">换毛季清理与梳毛记录 <span class="arrow">→</span></a>
+        <a href="/#category">窗台观察与阳光移动 <span class="arrow">→</span></a>
+        <a href="/#hot">纸箱与纸袋探索系列 <span class="arrow">→</span></a>
+        <a href="/#latest">深夜加餐与夜巡记录 <span class="arrow">→</span></a>
+      </div>
+    </section>
+
+    <!-- 11 创作者证言 -->
+    <section class="section" id="quotes">
+      <div class="section-head">
+        <h2>创作者说</h2>
+        <span class="sub">关于内容节奏的几句话</span>
+      </div>
+      <div class="quote-grid">
+        <div class="quote-card">
+          <p>短篇动画不需要讲一个完整故事，把几分钟里的光线和声音留住就够了。</p>
+          <div class="quote-author">内容记录者 · 阿柚</div>
+        </div>
+        <div class="quote-card">
+          <p>图文记录的重点是让人能在滑动中感到平静，而不是急着翻到下一张。</p>
+          <div class="quote-author">图文编辑 · 小满</div>
+        </div>
+        <div class="quote-card">
+          <p>固定更新时间比频繁改动更让人安心，观众知道什么时候回来。</p>
+          <div class="quote-author">更新维护 · 南窗</div>
+        </div>
+        <div class="quote-card">
+          <p>一人一猫系列没有剧本，只是把每天重复的流程记录下来，变化自然会出现。</p>
+          <div class="quote-author">生活记录 · 林间</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右栏 -->
+  <aside class="col-right" aria-label="辅助阅读">
+    <div class="side-card">
+      <div class="side-title">页内目录</div>
+      <ul class="toc-list">
+        <li><a href="/#intro">内容简介</a></li>
+        <li><a href="/#hot">热门推荐</a></li>
+        <li><a href="/#latest">最新更新</a></li>
+        <li><a href="/#category">分类入口</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#comments">用户评论</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#recommend">相关推荐</a></li>
+        <li><a href="/#quotes">创作者说</a></li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <div class="side-title">热门条目</div>
+      <ul class="hot-list">
+        <li><span class="rank">1</span><span class="txt">《窗台上的午后》无声小剧场</span></li>
+        <li><span class="rank">2</span><span class="txt">《柚子猫的纸箱探险》</span></li>
+        <li><span class="rank">3</span><span class="txt">《一人一猫的早餐时间》</span></li>
+        <li><span class="rank">4</span><span class="txt">《雨天不出门，和猫一起待着》</span></li>
+        <li><span class="rank">5</span><span class="txt">《深夜巡逻的柚子猫》</span></li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <div class="side-title">延伸阅读</div>
+      <ul class="toc-list">
+        <li><a href="/#deep">短篇动画的长度设计</a></li>
+        <li><a href="/#deep">图文记录与动画的区别</a></li>
+        <li><a href="/#faq">睡前放松分类怎么选</a></li>
+        <li><a href="/#news">通勤场景的内容适配</a></li>
+        <li><a href="/#guide">追更与收藏建议</a></li>
+      </ul>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name">柚子猫</span>
+      <p>治愈系猫咪日常内容门户，围绕短篇动画、图文记录和生活片段组织内容，适合通勤、午休和睡前放松时浏览。</p>
+    </div>
+    <div class="footer-col">
+      <h4>内容类型</h4>
+      <a href="/#hot">短篇动画</a>
+      <a href="/#hot">图文记录</a>
+      <a href="/#hot">无声小剧场</a>
+      <a href="/#latest">生活片段</a>
+    </div>
+    <div class="footer-col">
+      <h4>观看场景</h4>
+      <a href="/#latest">睡前放松</a>
+      <a href="/#latest">通勤陪伴</a>
+      <a href="/#category">午休间隙</a>
+      <a href="/#deep">一人一猫</a>
+    </div>
+    <div class="footer-col">
+      <h4>浏览入口</h4>
+      <a href="/#intro">内容简介</a>
+      <a href="/#category">分类入口</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#recommend">相关推荐</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 柚子猫 · 主题示例页面</span>
+    <span>部分内容为示例数据，仅用于展示页面结构</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  // 搜索筛选：在热门推荐卡片中查找
+  var searchInput = document.getElementById("siteSearch");
+  var searchBtn = document.getElementById("searchBtn");
+  var hotGrid = document.getElementById("hotGrid");
+  var noResult = document.getElementById("searchNoResult");
+  var echo = document.getElementById("searchTermEcho");
+
+  if (!searchInput || !searchBtn || !hotGrid) return;
+
+  function runSearch() {
+    var term = (searchInput.value || "").trim().toLowerCase();
+    var cards = hotGrid.querySelectorAll(".content-card");
+    var visibleCount = 0;
+
+    if (!term) {
+      cards.forEach(function (c) { c.style.display = ""; });
+      noResult.hidden = true;
+      return;
+    }
+
+    cards.forEach(function (card) {
+      var text = card.textContent.toLowerCase();
+      if (text.indexOf(term) !== -1) {
+        card.style.display = "";
+        visibleCount++;
+      } else {
+        card.style.display = "none";
+      }
+    });
+
+    if (visibleCount === 0) {
+      echo.textContent = searchInput.value.trim();
+      noResult.hidden = false;
+    } else {
+      noResult.hidden = true;
+    }
+  }
+
+  searchBtn.addEventListener("click", runSearch);
+  searchInput.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      runSearch();
+    }
+  });
+  searchInput.addEventListener("input", function () {
+    if (!searchInput.value.trim()) {
+      runSearch();
+    }
+  });
+})();
+</script>
+
+</body>
+          </html>
